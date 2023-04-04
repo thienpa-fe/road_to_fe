@@ -11,6 +11,11 @@
 - Trong quá trình học có thể góp ý thay đổi cách tiếp cận (thích nghi - quan sát cái tốt - cái chưa tốt)
 - Tự đề xuất các phương án mà mình thấy hiệu quả (bổ trợ cho kĩ năng lãnh đạo sau này - Đưa ra ý kiến → thuyết phục → áp dụng)
 
+# Cách search google
+- Keyword
+- Thuật ngữ chuyên ngành
+- Mã lỗi / message lỗi
+
 # Nên đọc tài liệu tiếng Việt hay tiếng Anh ?
 
 Nên chọn đọc tài liệu tiếng Anh vì:

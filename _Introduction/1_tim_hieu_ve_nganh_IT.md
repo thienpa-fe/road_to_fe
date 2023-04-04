@@ -5,6 +5,7 @@
 - Ở đại học, ngành CNTT sinh ra để đào tạo ra các kĩ sư máy tính, lập trình viên có khả năng sử dụng thành thạo máy tính, các phần mềm máy tính, lập trình nên các hệ thống ứng dụng phục vụ cho nhu cầu phát triển về công nghệ
 
 - Càng ngày càng có nhiều người chuyển hướng sang / đầu tư học từ rất sớm vì một số lợi ích
+  - Càng ngày càng có nhiều nhu cầu việc làm, ai cũng muốn làm cho mình một ứng dụng giải quyết nhu cầu của bản thân và muốn chia sẻ điều đó để giúp ích cho xã hội, thế giới
   - Con đường sự nghiệp phát triển với thu nhập cao và cơ hội công tác nước ngoài
   - Có thể làm từ xa (remote) thuận tiện cho việc sắp xếp thời gian và công việc (khi đã có trình độ nhất định)
   - Lương cao, đãi ngộ ở các công ty công nghệ cũng khá tốt
@@ -45,16 +46,6 @@
 - Senior: 5 năm kinh nghiệm trở lên / Lead team ⇒ (4x - 5x)
 - Software Architecture - Project Manager - CTO: 10 năm trở lên (1xx >)
 
-# Cách search google
-
-- Keyword
-- Thuật ngữ chuyên ngành
-- Mã lỗi / message lỗi
-
-# Nên đọc tài liệu tiếng Việt hay tiếng Anh ?
-
-- Ngành CNTT phát triển mạnh ở nước ngoài
-- Tiếng Anh là ngôn ngữ thông dụng nhất
 
 # Tài liệu tham khảo
 
@@ -68,3 +59,4 @@ Một số trang blog và trang web của các lập trình viên, hội nhóm c
 
 `💡 Đối với người mới sẽ tìm đọc những tài liệu bằng tiếng Việt để có để làm quen với kiến thức chuyên ngành và lấy cảm hứng
 Sau khi đã quen là có lượng kinh nghiệm nhất định thì sẽ chuyển dần qua việc tìm đọc các tài liệu tiếng anh. Sau đó là sử dụng hoàn toàn bằng tiếng anh`
+
