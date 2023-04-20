@@ -16,3 +16,13 @@
   ![](images/browser-viewport-1.jpeg)
   ![](images/browser-viewport-2.jpeg)
   ![](images/browser-viewport-3.jpeg)
+
+
+# Cách trang web được render lên trình duyệt
+
+- Browser thông qua url trên thanh address gửi request đến server
+
+- Server nhận request, xử lý và trả về response cho browser gồm file html chứa nội dung trang web và các link external resources như css, image, font, javascript và các util library
+
+- Parser trong browser engine bắt đầu parse code HTML và bắt đầu xây dựng cây DOM
+

@@ -7,6 +7,3 @@
 ## Cách hoạt động
 
 ![](images/how-css-works.png)
-
-
- 

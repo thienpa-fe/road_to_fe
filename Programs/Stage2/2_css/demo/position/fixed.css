@@ -1,0 +1,23 @@
+html {
+  height: 200vh;
+}
+
+.main-element {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  background-color: teal;
+  padding: 10px;
+}
+
+.parent-element {
+  position: relative;
+  padding: 10px;
+  background-color: #81adc8;
+}
+
+.sibling-element {
+  background: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #81adc8;
+}

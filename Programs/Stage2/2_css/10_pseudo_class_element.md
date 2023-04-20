@@ -32,6 +32,8 @@
 
 - Dùng để style một số thành phần cụ thể của element như chữ cái đầu tiên (first-letter), style cho placeholder của một input
 
+- Thêm element vào layout mà không phải tạo thẻ. Thậm chí trong trường hợp không có thẻ phù hợp để đại diện cho element thì có thể dùng pseudo
+
 - Syntax: Pseudo element sẽ được gọi bằng cách thêm dấu `::` và tên của nó ngay sau selector chính
 
   ```
@@ -43,3 +45,37 @@
 - Bảng pseudo element:
 
   ![](/Programs/Stage2/2_css/images/pseudo-element.png)
+
+## :before và :after
+
+- Đây là 2 pseudo element được sử dụng phổ biến. Nó sẽ thêm pseudo element vào phía trước hoặc phía sau của element gốc
+
+```html
+<p>Target element</p>
+```
+
+```css
+p:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: teal;
+  display: inline-block;
+}
+
+p:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: tomato;
+  display: inline-block;
+}
+```
+
+- Preview:
+
+  ![](/Programs/Stage2/2_css/images/pseudo-after-before-demo.png)
+
+
