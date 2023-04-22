@@ -94,4 +94,48 @@ như vậy style sẽ được apply chính xác hơn cho element mình cần
 và không bị lẫn lộn với các element khác
 ```
 
-# Sibling Selectors
+## Sibling Selectors (> ~ +)
+
+### Descendant Selector
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_element
+
+```css
+div p {
+}
+```
+
+- Chọn tất cả thẻ p là hậu duệ của thẻ div, có nghĩa là nếu các thẻ p này được bọc thêm trong các thẻ khác nữa thì nó vẫn sẽ được chọn
+
+### Child Selector (>)
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_gt
+
+```css
+div > p {
+}
+```
+
+- Chọn tất cả các thẻ p là con trực tiếp của div. Nếu thẻ p được bọc bởi một thẻ khác thì không đáp ứng và không được chọn
+
+### Adjacent Sibling Selector (+) (Liền kề)
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_pluss
+
+```css
+div + p {
+}
+```
+
+- Chọn tất cả thẻ p nằm liền kề ngay sau thẻ div
+
+### General Sibling Selector (~)
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_tilde
+
+```css
+div ~ p {
+}
+```
+
+- Chọn tất cả thẻ p cùng cấp nằm liền kề sau thẻ div (từ thẻ div trở về sau)
