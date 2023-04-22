@@ -30,9 +30,7 @@
 
 # Pseudo elements
 
-- Dùng để style một số thành phần cụ thể của element như chữ cái đầu tiên (first-letter), style cho placeholder của một input
-
-- Thêm element vào layout mà không phải tạo thẻ. Thậm chí trong trường hợp không có thẻ phù hợp để đại diện cho element thì có thể dùng pseudo
+- Dùng để style một số thành phần cụ thể của element như chữ cái đầu tiên (first-letter), style cho placeholder của một input,... Tạo ra những custom element không có sẵn mà không phải tạo thêm thẻ html, một số icon mà không cần phải import hình ảnh nào cho nó hậm chí trong trường hợp không có thẻ phù hợp để đại diện cho element thì có thể dùng pseudo
 
 - Syntax: Pseudo element sẽ được gọi bằng cách thêm dấu `::` và tên của nó ngay sau selector chính
 

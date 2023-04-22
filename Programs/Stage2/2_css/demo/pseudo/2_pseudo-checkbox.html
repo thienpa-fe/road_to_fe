@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: white;
+        font-size: 20px;
+        font-family: 'sf pro rounded';
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        margin: 50px 0 20px;
+      }
+
+      .container-custom {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+      }
+
+      .container-custom input {
+        display: none;
+      }
+
+      .checkmark {
+        width: 20px;
+        height: 20px;
+        background: white;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 3px;
+      }
+
+      .checkmark::before,
+      .checkmark::after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        transform: rotate(-60deg) scale(1.5);
+        
+        transition: all 0.9s;
+        border-radius: 50%;
+      }
+
+      .container-custom input:checked ~ .checkmark::after {
+        content: '\2714\0020';
+        color: teal;
+        position: absolute;
+        top: -2px;
+        left: 2px;
+        display: inline-block;
+        box-shadow: 0px 0px 20px rgb(78, 232, 232);
+        transform: rotate(0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Custom checkbox</h1>
+      <label class="container-custom">
+        One
+        <input type="checkbox" checked="checked" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container-custom">
+        Two
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container-custom">
+        Three
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+
+      <h1>Basic checkbox</h1>
+      <label>
+        <input type="checkbox" checked="checked" />
+        One
+      </label>
+      <label>
+        <input type="checkbox" />
+        Two
+      </label>
+      <label>
+        <input type="checkbox" />
+        Three
+      </label>
+    </div>
+  </body>
+</html>

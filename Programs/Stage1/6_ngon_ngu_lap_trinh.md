@@ -38,12 +38,17 @@
 # Thành phần của một ngôn ngữ lập trình
 
 - Một ngôn ngữ lập trình khi được phát triển đều bắt buộc phải có các thành phần sau:
+
   - Mục đích để tạo ra ngôn ngữ (Phục vụ cho loại hệ thống nào, nên tảng nào)
   - Syntax
   - Kiểu dữ liệu
   - Hệ thống keyword và các câu lệnh điều kiện, vòng lặp
   - Utilities
   - Luồng thực thi code
+
+- Ví dụ về ngôn ngữ lập trình: In ra "Hello world" bằng những ngôn ngữ lập trình khác nhau
+
+  ![](/Programs/Stage1/images/nnlt.jpeg)
 
 # Framework là gì ?
 
