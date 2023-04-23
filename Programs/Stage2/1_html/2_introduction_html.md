@@ -3,7 +3,7 @@
 ## Định nghĩa
 
 - Viết tắt của Hyper Text Markup Language => Ngôn ngữ đánh dấu siêu văn bản dùng để xây dựng nên phần khung sườn cho trang web có cấu trúc từ đơn giản đến phức tạp sử dụng các cặp thẻ (tags) để markup các thành phần (in đậm, in nghiêng, liên kết, tiêu đề, vùng chứa)
-- HTML không phải là ngôn ngữ lập trình, nó chỉ có chức năng định nghĩa nên layout của trang web và phần khung của các element
+- HTML **không phải là ngôn ngữ lập trình**, nó chỉ có chức năng định nghĩa nên layout của trang web và phần khung của các element
 - Phiên bản hiện tại mà đa phần các browser hỗ trợ là `HTML 5`
 
 ## Browser load một file html như thế nào ?
