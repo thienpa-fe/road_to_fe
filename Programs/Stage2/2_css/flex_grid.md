@@ -53,6 +53,10 @@ https://dev.to/harishrajora12/getting-started-with-css-flexbox-tutorial-3g96
 
 ## Grid
 
+### Track line
+  - Trackline = columns + 1
+  - Muốn select range để rải layout từ đầu đến cuối mà k rõ số column thì 1 -> -1
+
 ## Sự khác nhau giữa flex và grid
 
 - Tuy cả 2 đều dùng để xây dựng layout web nhưng nó sẽ hữu ích hơn khi được sử dụng đúng trường hợp cụ thể

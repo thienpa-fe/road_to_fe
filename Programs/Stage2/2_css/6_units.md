@@ -33,6 +33,19 @@
 
   - `em`: Không viết tắt cho gì cả, mang ý nghĩa là `Gấp x lần giá trị dựa theo giá trị mặc định` hoặc dựa vào phần tử cha chứa nó có define thuộc tính font-size. Mặc định ở đây `1em = 16px`
 
+    Với những thuộc tính không phải là font-size khi được định nghĩa giá trị em không còn tương đối với font-size ở element cha nữa. Nó sẽ lấy chính thuộc tính font-size ngay tại phần tử đó để tương đối vào
+
+    ```css
+    .container {
+      font-size: 20px;
+    }
+
+    .item {
+      font-size: 2em; /* 2 x 20 = 40px */
+      width: 1em; /* 1 x 40 = 40px */
+    }
+    ```
+
   - Vd: Khi phần tử cha define một thuộc tính css là `font-size: 16px` thì khi phần tử con set `font-size: 2em`. Nó sẽ dựa vào giá trị mặc định để tính ra chỉ số font-size. Tức là `2em => 16px * 2 = 32px`. Vậy phần tử con sẽ có thuộc tính là 32px dựa vào công thức trên
 
   - `vw, vh`: Viewport Width, Viewport Height là % độ rộng, độ cao của trình duyệt đang mở ở bất cứ kích thước nào, `1vh` sẽ tương ứng với 1% độ cao và `1vw` sẽ tương ứng với 1% độ rộng. Đơn vị này thường dùng cho việc làm sidebar hay những thứ dựa theo kích thước của viewport

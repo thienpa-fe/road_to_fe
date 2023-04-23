@@ -10,7 +10,7 @@
 
 - JS ngày nay không chỉ chạy được trên trình duyệt, nhờ một môi trường thực thi (NodeJS) JS bây giờ có thể chạy đa nền tảng như ở phía server hoặc các thiết bị khác
 
-# JavaScript hoạt động như thế nào
+# JavaScript được thực thi như thế nào trên trình duyệt
 
 - Khi trình duyệt tải file html, nó sẽ tải theo các file js về và tuỳ vào option sẽ quyết định các mà những file js đó được thực thi
 
@@ -18,7 +18,7 @@
 
 - Có 2 cách để có thể sử dụng JS trong html
 
-  - External resources: Import các file js từ bên ngoài vào thông qua thẻ `<script></script>` đi kèm các attributes để config cho việc tải và thực thi code js:
+  - **External**: Import các file js từ bên ngoài vào thông qua thẻ `<script></script>` đi kèm các attributes để config cho việc tải và thực thi code js:
     - src: Đường dẫn liên kết đến file js cần tải
     - defer
     - async
@@ -28,3 +28,11 @@
     ```html
     <script src="myscripts.js"></script>
     ```
+  - **Internal**: Có thể viết code JS trực tiếp trong file HTML bằng cặp thẻ script
+
+    ```html
+    <script>
+      console.log('Say Hello Jacascript')
+    </script>
+    ```
+
