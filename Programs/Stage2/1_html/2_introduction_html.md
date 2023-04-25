@@ -10,7 +10,7 @@
 
 ![](images/browser-parse-html.png)
 
-- Sau khi nhận được file html được trả về từ server, parser trong file html sẽ thực hiện việc parse code html và build lên cây DOM (Document Object Model).
+- Sau khi nhận được file html được trả về từ server, parser trong browser engine sẽ thực hiện việc parse code html và build lên cây DOM (Document Object Model).
 - Các link external resource cũng sẽ được load theo sau đó để tải những thư viện, thành phần khác cho việc xây dựng layout trang web
 
 ## DOM là gì ?
