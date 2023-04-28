@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox</title>
-  <style>
-    .container {
-      font-family: 'sf pro rounded';
-      background: lightblue;
-      width: 80%;
-      height: 500px;
-      margin: 0 auto;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        font-family: 'sf pro rounded';
+        background: lightblue;
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+        gap: 30px;
 
-      /* Flex container style */
-      display: flex;
-      flex-wrap: wrap;
+        /* Flex container style */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
 
-      /* align-content: space-between; */
+        /* align-content: space-between; */
 
-      /* flex-direction: column; */
-      /* flex-direction: row; */
-      /* justify-content: center; */
-    
-      /* justify-content: flex-start; */
-      /* justify-content: flex-end; */
-      /* justify-content: space-between; */
-      /* justify-content: space-around; */
-      /* justify-content: space-evenly; */
+        /* flex-direction: column; */
+        /* flex-direction: row; */
+        /* justify-content: center; */
 
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
 
-      align-items: center;
-      /* align-items: flex-start; */
-      /* align-items: flex-end; */
-      align-items: stretch;
-      /* align-items: baseline; Set width for each block when use this */
-     
-    }
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+        /* align-items: baseline; */
+      }
 
-    .item-common {
-      border-radius: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 30px;
-      width: 100px;
-      height: 100px; /* Disable this when use align-items:stretch */
-      background-color: teal;
-      border: 1px solid white;
+      .item-common {
 
-      /* Flex item style */
-    }
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        width: 100px;
+        height: 100px;
+        /* Disable this when use align-items:stretch */
+        background-color: teal;
+        border: 1px solid white;
 
+        /* Flex item style */
+      }
 
-    /*  Set Order */
-    .item1 {
-      flex-basis: 200px;
-      /* flex-basis: 100%; */
-    }
+      /*  Set Order */
+      .item1 {
+        order: 3;
+      }
 
-    .item2{
+      .item2 {
+        order: 2;
+      }
 
-     
-    }
-
-    .item3 {
-
-      
-    }
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="item-common item1">1</div>
-    <div class="item-common item2">2</div>
-    <div class="item-common item3">3</div>
-    <div class="item-common item4">4</div>
-    <div class="item-common item5">5</div>
-    <div class="item-common item6">6</div>
-  </div>
-</body>
+      .item3 {
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-common item1">1</div>
+      <div class="item-common item2">2</div>
+      <div class="item-common item3">3</div>
+      <!-- <div class="item-common item1">4</div>
+      <div class="item-common item2">5</div>
+      <div class="item-common item3">6</div> -->
+      <!-- <div class="item-common item1">7</div>
+      <div class="item-common item2">8</div>
+      <div class="item-common item3">9</div> -->
+    </div>
+  </body>
 </html>
