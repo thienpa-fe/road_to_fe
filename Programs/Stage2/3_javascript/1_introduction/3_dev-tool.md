@@ -27,6 +27,7 @@
 - Hiển thị thông tin, message lỗi, trạng thái của web để ta có thể dễ dàng theo dõi
 - Cho phép ta viết code JS để tương tác với trình duyệt như gán event, trích xuất HTML element, xử lý tính toán và log giá trị
 - Sử dụng rất hiệu quả cho việc debug chương trình
+- Các hàm show popup hay dùng như `prompt()`, `console.log()`, `alert()`
 
 ### Network
 
