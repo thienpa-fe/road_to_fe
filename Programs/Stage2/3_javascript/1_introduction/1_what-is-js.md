@@ -47,7 +47,13 @@
   - Khi trình duyệt tải file html, nó sẽ tải theo các file js về và tuỳ vào option sẽ quyết định thứ tự mà những file js đó được thực thi
   - Browser engine sẽ parse code JS
   - Convert code JS thành ngôn ngữ máy
-  - Chạy và thực thi code đã biên dịch
+  - Chạy và thực thi code đã biên 
+  
+
+![](../images/why-javascript-meme.jpeg)
+> Trước đây JS chỉ được sử dụng trên trình duyệt, sau này phát triển nhờ các môi trường như NodeJS. JS đã trở thành ngôn ngữ dùng để phát triển các ứng dụng đa nền tảng
+
+
 
 ## Single thread or Multi thread ?
 
