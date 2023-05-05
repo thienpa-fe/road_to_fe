@@ -17,7 +17,7 @@
 
 ### [Paragraph](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1)
 
-Content giữa cặp thẻ p sẽ được hiển thị tuỳ theo trình duyệt, mình không thể kiểm soát được việc ngắt dòng hay khoảng cách của nó kể cả có cố ý code như vậy
+Content giữa cặp thẻ p sẽ được hiển thị tuỳ theo kích cỡ co dãn của trình duyệt và theo normal flow, mình không thể kiểm soát được việc ngắt dòng hay khoảng cách của nó kể cả có cố ý code như vậy
 
 ```html
 <p>This is a paragraph.</p>
