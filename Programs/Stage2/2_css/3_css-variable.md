@@ -25,15 +25,31 @@
   }
   ```
 
-  ## Công dụng
+## Công dụng
 
-  - Công dụng bậc nhất của css variable vẫn là để có thể reuse lại và dễ kiểm soát trong việc thay đổi
+- Công dụng bậc nhất của css variable vẫn là để có thể reuse lại và dễ kiểm soát trong việc thay đổi
 
-  - Việc reuse có thể áp dụng cho nhiều thành phần khác nhau nhưng có chung giá trị thuộc tính css hay theo một concept nào đó
+- Việc reuse có thể áp dụng cho nhiều thành phần khác nhau nhưng có chung giá trị thuộc tính css hay theo một concept nào đó
 
-  - Khi có thay đổi style của nhiều thành phần thì nhờ vào css variable ta chỉ cần sửa một chỗ thôi và những chỗ khác sẽ được cập nhật theo
+- Khi có thay đổi style của nhiều thành phần thì nhờ vào css variable ta chỉ cần sửa một chỗ thôi và những chỗ khác sẽ được cập nhật theo
 
-    ![](images/css-variable.png)
+  ![](images/css-variable.png)
+
+## Fallback Value
+
+- Khi các variable không có sẵn hoặc không hợp lệ, thì những giá trị fallback value sẽ được sử dụng như là giá trị mặc định để tránh lỗi giao diện
+
+  ```css
+  .header-title {
+    /* Red if --my-var is not defined */
+    color: var(--my-var, red);
+  }
+
+  .login-button {
+    /* pink if --my-var and --my-background are not defined */
+    background-color: var(--my-var, var(--my-background, pink));
+  }
+  ```
 
 ## Scope
 

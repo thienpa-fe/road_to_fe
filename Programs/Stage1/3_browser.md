@@ -26,3 +26,5 @@
 
 - Parser trong browser engine bắt đầu parse code HTML và bắt đầu xây dựng cây DOM
 
+> Trình duyệt không thể hoạt động với các dữ liệu thô của HTML hoặc CSS. Điều này phải được chuyển đổi thành một dạng mà nó nhận ra - và đó là những tree structure.
+
