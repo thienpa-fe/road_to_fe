@@ -1,4 +1,5 @@
 # Clean code
+
 > Viết code cũng như viết chính tả. Đúng chính tả thì câu từ mới hay và có nghĩa. Cũng như code có clean thì mới dễ đọc fix lỗi và tối ưu hệ thống
 
 ## Clean code là gì ?
@@ -13,7 +14,7 @@
 
 ## Clean code vs Bad code ?
 
-- Một đoạn code được đánh giá là clean hay bad dựa trên nhiều yếu tố như cách trình bày, cách define vấn đề và triển khai logic để giải quyết vấn đề
+- Một đoạn code được đánh giá là clean hay bad dựa trên nhiều yếu tố như cách trình bày, cách define vấn đề và triển khai logic để giải quyết vấn đề (syntax & logic)
 
   ### Logic quality
 
@@ -59,7 +60,24 @@
     </div>
     ```
 
-## Convention
+## Cách giải quyết
+
+- Để nâng cao khả năng viết clean code:
+  - **Logic quality**: Không ngừng luyện tập nâng cao khả năng tư duy logic, giải quyết vấn đề bằng cách tìm hiểu nghiên cứu các thuật toán và triển khai nhiều ví dụ giải quyết vấn đề bằng việc coding
+  - **Syntax quality**: Việc trình bày code sạch đẹp rất quan trọng và nên được hình thành thói quen càng sơms càng tốt. Hiện nay có Prettier extension (sẽ tìm hiểu ở dưới) rất phổ biển phục vụ việc format lại code theo config giúp tiết kiệm thời gian cho dev trong việc coding mà vẫn đảm bảo clean
+
+### Prettier (https://prettier.io)
+
+![](../images/prettier.png)
+
+- Đây là extension giúp format code cho dev theo style định sẵn trong file config.
+- Để install global prettier trong máy có thể chạy lệnh:
+
+```bash
+  npm i -g prettier && prettier -v
+```
+
+![](../images/install-prettier.png)
 
 ### Naming everything
 
@@ -71,10 +89,18 @@
 - Function
 - File name
 - Class
--
 
 ### Condition statements
 
 ### Code Indentation
 
 ### Lines / Chars
+
+
+
+### Be cafeful with Magic Number
+
+#### Magic Number là gì ?
+
+
+#### Cách giải quyết

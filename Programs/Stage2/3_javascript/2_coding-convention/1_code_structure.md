@@ -1,8 +1,6 @@
 # Code Structure
 
-- Các thành phần cấu tạo nên một file code
-
-## Statements
+## Statement
 
 - Là một cấu trúc syntax dùng để biểu diễn cho một hành động cụ thể
 - Một tập các statement phối hợp với nhau theo một logic thì sẽ được gọi là một hàm (function)
@@ -13,8 +11,8 @@
 ## Block code
 
 - Một block code được phân định trong cặp dấu `{}`
-- Dùng để group 1 hoặc nhiều câu lệnh lại để thực hiện một hoặc một chuỗi hành động có mục đích
-- Đại diện cho thành phần này gồm các câu lệnh điều kiện if else hoặc câu lệnh lặp for
+- Dùng để gom nhóm (group) một hoặc nhiều câu lệnh lại để thực hiện một hoặc một chuỗi hành động có mục đích
+- Đại diện cho thành phần này gồm các câu lệnh điều kiện if else hoặc câu lệnh lặp for hay các lời gọi hàm và có nhiều hàm con thực thi bên trong
 
 ```js
 if (weather === 'rain') {
@@ -28,6 +26,22 @@ for (let i = 0; i < 100; i++) {
 }
 ```
 
+```js
+function research() {}
+
+function composeDocument() {}
+
+function doExampleForNewKnowledge() {}
+
+function doHomeWork() {
+  research();
+  composeDocument();
+  doExampleForNewKnowledge();
+}
+
+doHomeWork();
+```
+
 ## Semicolons (;)
 
 - Dấu `;` dùng để kí hiệu kết thúc một câu lệnh
@@ -35,10 +49,11 @@ for (let i = 0; i < 100; i++) {
 - Ở nhiều ngôn ngữ nếu không có dấu `;` thì sẽ báo lỗi. Riêng JS có hỗ trợ không cần thêm `;` vì nó đã ngầm định thêm vào. Nhưng theo quy ước thì vẫn nên thêm để code dễ đọc hơn
 
 ```js
-  alert('Hello'); alert('World');
+alert('Hello');
+alert('World');
 
-  alert('Hello');
-  alert('World');
+alert('Hello');
+alert('World');
 ```
 
 ## Comment
@@ -50,7 +65,8 @@ for (let i = 0; i < 100; i++) {
   - Viết document hướng dẫn flow cho chỗ code đó nếu nó có logic phức tạp
   - Các yếu tố cần setup trước để chỗ code đó có thể hoạt động được
   - Một số convention project bắt buộc khai báo code author, mục đích của đoạn code,...
-![](../images/comment-hell.png)
+  
+    ![](../images/comment-hell.png)
 
 - Có 2 loại comment
   - Comment single line (//)

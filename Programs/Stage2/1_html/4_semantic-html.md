@@ -15,3 +15,7 @@
 
 - Sẽ được thay thế bằng kiểu viết sử dụng semantic HTML:
   ![](./images/semantic-html-3.png)
+
+## Tổng kết
+
+![](images/compare-semantic-html.jpeg)
