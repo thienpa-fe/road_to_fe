@@ -1,6 +1,6 @@
 # Developer tool
 
-- Devloper tool là công cụ hữu ích trong việc phát triển web cũng như phát hiện lỗi. Vd: Một trang web vào một ngày đẹp trời không vào được nữa, trên giao diện không báo gì nhưng khi có dev tool, ta sẽ tìm được nguyên nhân
+- Developer tool là công cụ hữu ích trong việc phát triển web cũng như phát hiện lỗi. Vd: Một trang web vào một ngày đẹp trời không vào được nữa, trên giao diện không báo gì nhưng khi có dev tool, ta sẽ tìm được nguyên nhân
 - Được tích hợp trong tất cả các trình duyệt
 
 ## Dev tool in chrome

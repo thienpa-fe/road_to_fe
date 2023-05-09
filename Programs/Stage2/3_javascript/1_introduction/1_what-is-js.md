@@ -15,7 +15,14 @@
   - JS chạy trong browser bị hạn chế vì tính năng của nó như con dao hai lưỡi có thể bị kẻ xấu lợi dụng thể gây thiệt hại ngược lại cho user (XSS,...)
   - Không truy cập được vào chức năng của hệ điều hành trên máy
   - Có thể kích hoạt tính năng mở camera, loa, location nhưng chỉ khi được user cấp quyền để hoạt động
-  - JS có thể truy cập được vào các page khác nhau từ nhiều url khác nhau mặc dù nó nằm ở các tab khác nhau
+
+    ```js
+    let secret_mediaDevices = navigator.mediaDevices;
+    secret_mediaDevices.getUserMedia({
+      audio: true,
+      video: true,
+    });
+    ```
 
     ![](../images/js-intro.png)
 
@@ -47,13 +54,11 @@
   - Khi trình duyệt tải file html, nó sẽ tải theo các file js về và tuỳ vào option sẽ quyết định thứ tự mà những file js đó được thực thi
   - Browser engine sẽ parse code JS
   - Convert code JS thành ngôn ngữ máy
-  - Chạy và thực thi code đã biên 
-  
+  - Chạy và thực thi code đã biên
 
 ![](../images/why-javascript-meme.jpeg)
+
 > Trước đây JS chỉ được sử dụng trên trình duyệt, sau này phát triển nhờ các môi trường như NodeJS. JS đã trở thành ngôn ngữ dùng để phát triển các ứng dụng đa nền tảng
-
-
 
 ## Single thread or Multi thread ?
 
@@ -83,7 +88,21 @@
     </script>
     ```
 
-    \*\*Lưu ý: Thẻ `<script></script>` có thể đặt ở trong thẻ `<head></head>` và `<body></body>` nhưng đề xuất sẽ đặt ở cuối cùng của thẻ `<body></body>`. Chi tiết xem tại bài [Script tag deep dive](2_script-tag-deep-dive.md)
+    \*\*Lưu ý: Thẻ `<script></script>` có thể đặt ở trong thẻ `<head></head>` và `<body></body>` nhưng để tối ưu thì sẽ đặt ở dòng cuối cùng của content trong thẻ `<body></body>`. Chi tiết xem tại bài [Script tag deep dive](2_script-tag-deep-dive.md)
+
+    ```html
+    <html>
+      <head>
+        <!-- Can put here -->
+        <script></script>
+      </head>
+      <body>
+        ...
+        <!-- Can put here - Better performance -->
+        <script></script>
+      </body>
+    </html>
+    ```
 
 ## Run and Execute JavaScript
 

@@ -20,36 +20,45 @@ Có 2 cách để sử dụng được js trong file html là _internal import_ 
 
   ![](../images/load-script-default.png)
 
- - `defer (hoãn)`:
+- `defer (hoãn)`:
 
-   - Attribute này không block việc render page. Việc tải script sẽ được chạy nền trong khi browser tiếp tục render layout. Script tải xong sẽ không thực thi ngay mà bị hoãn lại.
-   - Sau khi layout được render xong thì script mới được thực thi. Lúc này cây DOM được build xong và đã sẵn sàng
+  - Attribute này không block việc render page. Việc tải script sẽ được chạy nền trong khi browser tiếp tục render layout. Script tải xong sẽ không thực thi ngay mà bị hoãn lại.
 
+  - Sau khi layout được render xong thì script mới được thực thi. Lúc này cây DOM được build xong và đã sẵn sàng
 
-     ```html
-     <script
-       defer
-       src="https://javascript.info/article/script-async-defer/small.js"
-     ></script>
-     ```
+  - Attribute này thường được sử dụng khi:
+    - Số lượng file script nhiều, phụ thuộc nhau và cần thời gian dài để download
+    - Logic của script thao tác nhiều đến cây DOM, cần defer cho đến khi cây DOM hoàn chỉnh
+    - Cần tải script thư viện trước, và script logic sau để sử dụng -> Defer script logic
 
-     ![](../images/load-script-defer.png)
+  ```html
+  <script
+    defer
+    src="https://javascript.info/article/script-async-defer/small.js"
+  ></script>
+  ```
 
- - `async (asynchronous - bất đồng bộ)`:
+  ![](../images/load-script-defer.png)
 
-     - Browser sẽ vừa tải script chạy nền và vừa render layout
-     - Nếu có nhiều script, các script sẽ không đợi nhau mà cùng tải song song
-     - Ngay sau khi download xong, script sẽ được thực thi ngay lập tức. Đến lúc này quá trình render mới dừng lại để đợi js thực thi
+- `async (asynchronous - bất đồng bộ)`:
 
-       ```html
-       <script
-         async
-         src="https://javascript.info/article/script-async-defer/small.js"
-       ></script>
-       ```
+  - Browser sẽ vừa tải script chạy nền và vừa render layout
+  - Nếu có nhiều script, các script sẽ không đợi nhau mà cùng tải song song
+  - Ngay sau khi download xong, script sẽ được thực thi ngay lập tức. Đến lúc này quá trình render mới dừng lại để đợi js thực thi
+  - Attribute này thường được sử dụng khi:
 
-       ![](../images/load-script-async.png)
+    - Tải những script hỗ trợ bên ngoài như google ads,...
+    - Các script thư viện lấy từ nhiều domain khác nhau
 
+    ```html
+    <script
+      async
+      src="https://javascript.info/article/script-async-defer/small.js"
+    ></script>
+    ```
+
+    ![](../images/load-script-async.png)
 
 ## Kết luận
-  ![](../images/general-script-load.png)
+
+![](../images/general-script-load.png)
