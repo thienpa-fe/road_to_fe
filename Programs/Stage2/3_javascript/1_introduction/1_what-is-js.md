@@ -39,6 +39,8 @@
 
 - JS ngày nay không chỉ chạy được trên trình duyệt, nhờ một môi trường thực thi (NodeJS) JS bây giờ có thể chạy đa nền tảng như ở phía server hoặc các thiết bị khác
 
+  ![](../images/why-javascript-meme.jpeg)
+
 ## JavaScript được thực thi như thế nào trên trình duyệt ?
 
 - Code JavaScript được compile bằng browser engine, được gọi là "JavaScript Virtual Machine". Thường các trình duyệt khác nhau sẽ có các tên engine khác nhau:
@@ -54,11 +56,7 @@
   - Khi trình duyệt tải file html, nó sẽ tải theo các file js về và tuỳ vào option sẽ quyết định thứ tự mà những file js đó được thực thi
   - Browser engine sẽ parse code JS
   - Convert code JS thành ngôn ngữ máy
-  - Chạy và thực thi code đã biên
-
-![](../images/why-javascript-meme.jpeg)
-
-> Trước đây JS chỉ được sử dụng trên trình duyệt, sau này phát triển nhờ các môi trường như NodeJS. JS đã trở thành ngôn ngữ dùng để phát triển các ứng dụng đa nền tảng
+  - Chạy và thực thi code đã biên dịch
 
 ## Single thread or Multi thread ?
 
