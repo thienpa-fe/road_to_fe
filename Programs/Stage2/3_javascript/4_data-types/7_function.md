@@ -1,7 +1,7 @@
 # Function
 
 ## Định nghĩa
-- Function (hafm)
+- Function (hàm) bản chất là một block code được đặt tên - Là một hoặc một chuỗi các statement dùng để thực hiện một tác vụ nào đó hoặc tính toán và trả ra một giá trị
 
 ## Gọi một function
 
@@ -14,11 +14,12 @@
 ## Function declaration & Function Expression
 
 
-
 ## Pure function
 
-## HOF
-
+## HOF (Higher order function)
+![](../images/higher-order-func.png)
+- 
+-
 ## First class function
 
-## Callback function
+## Callback function (Hàm gọi lại)

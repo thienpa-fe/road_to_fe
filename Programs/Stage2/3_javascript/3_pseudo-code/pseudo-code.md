@@ -48,3 +48,7 @@ Viết một chương trình tính tổng, nhận vào 2 số nguyên khác 0 v�
     alert('Wrong input!');
   }
   ```
+
+## Thực hành
+
+- Phân tích, dựng sơ đồ khối và viết code giả cho vấn đề: Hỏi tuổi của người dùng, nếu tuổi dưới 8 in ra "Trẻ em", tuổi dưới 20 in ra "Thiếu niên", tuổi trên 20 in ra "Trưởng thành". Tuổi không hợp lệ sẽ in ra "Tuổi không hợp lệ"

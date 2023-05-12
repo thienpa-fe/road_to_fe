@@ -1,5 +1,41 @@
-# Strict mode (Chế độ thanh niên nghiêm túc)
+# Strict mode
 
-- Bản thân JS từ khi được tạo ra là một ngôn ngữ động, nghĩa là kiểu dữ liệu của nó có thể thay đổi cũng như có thể làm được vài thứ hay ho
+- Bản thân JS từ khi được tạo ra là một ngôn ngữ khá là linh hoạt và "dễ dãi":
+
+  - Không cần định nghĩa kiểu dữ liệu, gán cho nó giá trị gì thì nó sẽ là kiểu dữ liệu của giá trị đó
+
+    ```js
+    const final = 1;
+    final = 'hello';
+    final = true;
+    final = {};
+    final = [];
+    final = null;
+    final = undefined;
+    final = 'end';
+
+    console.log(final); // end => JS vẫn hoạt động bình thường, không lỗi
+    ```
+
+  - Có thể dùng trước một biến rồi định nghĩa sau
+
+    ```js
+    username = 'myadmin'; // JS hasn't error here
+
+    let username;
+    ```
 
 - Để kích hoạt strict mode, chỉ cần thêm `'strict-mode'` vào line đầu tiên của file JS
+
+  ```javascript
+  'use strict';
+
+  // Code JS here...
+  ```
+
+- Ở chế độ strict mode, một biến sẽ không thể sử dụng hay gán giá trị nếu như nó chưa được khai báo, nếu cố tình làm vậy sẽ bị quăng lỗi
+
+  ```js
+  'use strict';
+  x = 3.14; // Uncaught ReferenceError: x is not defined
+  ```

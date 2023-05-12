@@ -132,8 +132,8 @@ age = 50;
 ### Kiểu tham chiếu (reference type)
 
 - Bao gồm: object, function
-- Các biến thuộc loại kiểu dữ liệu này sẽ lưu trữ địa chỉ tham chiếu đến ô nhớ lưu giữ giá trị thực sự của nó
 - Khi gọi biến thì sẽ trỏ đến địa chỉ ô nhớ mà biến đang lưu -> Lấy giá trị thực sự đang chứa trong địa chỉ đó ra
+- Các biến thuộc loại kiểu dữ liệu này sẽ lưu trữ địa chỉ tham chiếu đến ô nhớ lưu giữ giá trị thực sự của nó
 - Với những phép gán cho object hay array thì JS sẽ copy địa chỉ tham chiếu đó => Khi 2 biến là bản sao kiểu dữ liệu tham chiếu của nhau mà có một biến thay đổi giá trị thì giá trị của biến kia cũng sẽ đổi theo
 
 ### Primitive Wrapper Object
@@ -171,7 +171,7 @@ age = 50;
     s.language = 'ECMAScript'; // wrapped by PWO -> assigned for s.language -> and release immediately
     console.log(s.language); // undefined
     ```
-> Ta sẽ không tạo ra biến PWO bằng keyword new với vài lí Do
+> Ta sẽ không tạo ra biến PWO bằng keyword new với vài lí do
 > - Ảnh hưởng đến hiệu năng: biến PWO bản chất cũng là object và cần thêm bộ nhớ và thời gian để truy cập và xử lý
 > - Khó khăn khi xử lý condition statement, vd Number(0) mong muốn là true nhưng nó sẽ thành false
 > - Một số JS Engine trên trình duyệt (Như V8 của chrome) sẽ không được tối ưu để xử lý PWO
