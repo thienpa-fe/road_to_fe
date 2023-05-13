@@ -6,11 +6,7 @@
 
 ## Id
 
-- Vì id là unique (duy nhất) nên với một id thì chỉ chọn được một element duy nhất. Không thể đặt cho nhiều html element cùng một id giống nhau
-
-`#<id> {
-	<style>: <value>
-}`
+Vì id là unique (duy nhất) nên với một id thì chỉ chọn được một element duy nhất. Không thể đặt cho nhiều html element cùng một id giống nhau
 
 ```css
 #my-id {
@@ -82,16 +78,14 @@
 
   ```css
   * {
-    background-color: yellow;
+    color: pink;
   }
   ```
 
   ![](/Programs/Stage2/2_css/images/universal-selector.png)
 
 ```
-Các selector có thể nối với nhau và càng có độ cụ thể thì càng tốt,
-như vậy style sẽ được apply chính xác hơn cho element mình cần
-và không bị lẫn lộn với các element khác
+Các selector có thể nối với nhau và càng có độ cụ thể thì càng tốt, như vậy style sẽ được apply chính xác hơn cho element mình cần và không bị lẫn lộn với các element khác
 ```
 
 ## Sibling Selectors (> ~ +)
@@ -138,4 +132,4 @@ div ~ p {
 }
 ```
 
-- Chọn tất cả thẻ p cùng cấp nằm liền kề sau thẻ div (từ thẻ div trở về sau)
+- Chọn tất cả thẻ p (cùng cấp với thẻ div và từ thẻ div trở về sau). Những thẻ p nằm phía trước thẻ div sẽ không được chọn
