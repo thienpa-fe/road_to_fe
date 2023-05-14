@@ -5,24 +5,24 @@
 
 ## Dev tool in chrome
 
-![](/Programs/Stage2/3_javascript/images/dev-tool.png)
+![](../images/dev-tool.png)
 
 ## Dev tool in firefox
 
-![](/Programs/Stage2/3_javascript/images/firefox-devtool.png)
+![](../images/firefox-devtool.png)
 
 ## Thành phần cơ bản
 
 ### Elements
 
-![](/Programs/Stage2/3_javascript/images/devtool-elements.png)
+![](../images/devtool-elements.png)
 
 - Hiển thị element html và style dùng để render ra trang web
 - Có thể edit trực tiếp để tác động lên layout và style của trang web
 
 ### Console
 
-![](/Programs/Stage2/3_javascript/images/devtool-console.png)
+![](../images/devtool-console.png)
 
 - Hiển thị thông tin, message lỗi, trạng thái của web để ta có thể dễ dàng theo dõi
 - Cho phép ta viết code JS để tương tác với trình duyệt như gán event, trích xuất HTML element, xử lý tính toán và log giá trị
@@ -31,7 +31,7 @@
 
 ### Network
 
-![](/Programs/Stage2/3_javascript/images/devtool-network.png)
+![](../images/devtool-network.png)
 
 - Giúp kiểm tra được chi tiết các request, response
 - Kiểm tra các API call và data trả về
@@ -39,14 +39,14 @@
 
 ### Application
 
-![](/Programs/Stage2/3_javascript/images/devtool-application.png)
+![](../images/devtool-application.png)
 
 - Lưu trữ các thông tin trên trình duyệt dùng cho trang web
 - Cache data
 
 ### Lighthouse
 
-![](/Programs/Stage2/3_javascript/images/devtool-lighthouse-2.png)
+![](../images/devtool-lighthouse-2.png)
 
 - Một tool được tích hợp sẵn trong trình duyệt dùng để đánh giá, phân tích hiệu suất cũng như nội dung trên web để phục vụ SEO
 
@@ -54,6 +54,6 @@
 
 - Một số tab khác thông qua việc cài đặt các extension chuyên dụng cho lập trình web cũng sẽ xuất hiện trên devtool, phổ biến như [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) và [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
-![](/Programs/Stage2/3_javascript/images/devtool-redux.png)
+![](../images/devtool-redux.png)
 
-![](/Programs/Stage2/3_javascript/images/devtool-react.png)
+![](../images/devtool-react.png)
