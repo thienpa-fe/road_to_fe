@@ -11,7 +11,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
   <head>
     <style>
       h1 {
-        color: red;
+        color: blue;
       }
 
       .heading {
@@ -19,7 +19,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
       }
 
       #heading {
-        color: red;
+        color: green;
       }
     </style>
   </head>
@@ -59,3 +59,35 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
     | .class     | 10      |
     | tagname    | 1       |
     | \*         | 0       |
+
+  - Code ví dụ so sánh selector tag name và tag name + class
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+          /* Priority: 1 + 10 = 11  */
+          h1.title { 
+            color: turquoise;
+            color: turquoise !important; /* Priority: 11 + 999999  */
+          }
+
+          /* Priority:  1 + 100 = 101 */
+          h1#win {
+            color: red;
+          }
+        </style>
+      </head>
+      <body>
+        <div>
+          <h1 class="title" id="win">Road to Frontend</h1>
+        </div>
+      </body>
+    </html>
+    ```
+
+> Độ ưu tiên của css được sắp xếp từ thấp đến cao:
+> Tag name < class / attribute < id < inline < !important
