@@ -1,8 +1,14 @@
 # Code Structure
 
+- 1 file code sẽ được cấu tạo từ các thành phần
+  - Statement
+  - Các statement sẽ tạo thành một khối lệnh hay một hàm
+  - Nhiều hàm được khai báo trong một file js => Functional programming
+
 ## Statement
 
 - Là một cấu trúc syntax dùng để biểu diễn cho một hành động cụ thể
+- Statement hay còn gọi là một câu lệnh
 - Một tập các statement phối hợp với nhau theo một logic thì sẽ được gọi là một hàm (function)
 - Vd: Khi viết `alert('hello')` thì statement này sẽ ra lệnh cho máy tính hiện hộp thoại cảnh báo có nội dung 'hello'
 
@@ -10,37 +16,24 @@
 
 ## Block code
 
-- Một block code được phân định trong cặp dấu `{}`
+- Một block code được phân định trong cặp dấu `{}`. Không cần biết bên trong cặp dấu có statement hoặc không có statement
 - Dùng để gom nhóm (group) một hoặc nhiều câu lệnh lại để thực hiện một hoặc một chuỗi hành động có mục đích
 - Đại diện cho thành phần này gồm các câu lệnh điều kiện if else hoặc câu lệnh lặp for hay các lời gọi hàm và có nhiều hàm con thực thi bên trong
+- Block code thường được tạo ra bởi khối lệnh điều kiện (if else, while, do while), vòng lặp (for, ...), hàm (function)
 
-```js
-if (weather === 'rain') {
-  console.log('I will at home');
-} else {
-  console.log('I will go to coffee shop');
-}
+  ```js
+  if (weather === 'rain') {
+    console.log('I will at home');
+  } else {
+    console.log('I will go to coffee shop');
+  }
 
-for (let i = 0; i < 100; i++) {
-  console.log(i);
-}
-```
+  for (let i = 0; i < 100; i++) {
+    console.log(i);
+  }
 
-```js
-function research() {}
-
-function composeDocument() {}
-
-function doExampleForNewKnowledge() {}
-
-function doHomeWork() {
-  research();
-  composeDocument();
-  doExampleForNewKnowledge();
-}
-
-doHomeWork();
-```
+  function doExampleForNewKnowledge() {}
+  ```
 
 ## Semicolons (;)
 
@@ -48,9 +41,9 @@ doHomeWork();
 - Trong một file gồm nhiều dòng code thì các câu lệnh sẽ ngăn cách với nhau bằng dấu `;`.
 - Ở nhiều ngôn ngữ nếu không có dấu `;` thì sẽ báo lỗi. Riêng JS có hỗ trợ không cần thêm `;` vì nó đã ngầm định thêm vào. Nhưng theo quy ước thì vẫn nên thêm để code dễ đọc hơn
 
-```js
-alert('Hello');
-alert('World');
+```
+alert('Hello')
+alert('World')
 
 alert('Hello');
 alert('World');
@@ -65,7 +58,7 @@ alert('World');
   - Viết document hướng dẫn flow cho chỗ code đó nếu nó có logic phức tạp
   - Các yếu tố cần setup trước để chỗ code đó có thể hoạt động được
   - Một số convention project bắt buộc khai báo code author, mục đích của đoạn code,...
-  
+
     ![](../images/comment-hell.png)
 
 - Có 2 loại comment
