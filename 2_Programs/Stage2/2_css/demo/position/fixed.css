@@ -4,10 +4,11 @@ html {
 
 .main-element {
   position: fixed;
-  right: 10px;
-  bottom: 30px;
+  /* right: 10px;
+  bottom: 30px; */
   background-color: teal;
   padding: 10px;
+  width: 100%;
 }
 
 .parent-element {
