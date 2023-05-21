@@ -18,8 +18,8 @@
 ## display: inline
 
 - Chiều rộng sẽ bằng đúng phần content của element. Các element sẽ cùng nằm trên một hàng đến khi nào hết chiều rộng của viewport thì mới rơi xuống dưới
-- Element có `display:inline` sẽ không thể set width, height, margin padding top-botto
-- Element có `display:inline` có thể set được margin padding left-righ
+- Element có `display:inline` sẽ không thể set width, height, margin padding top-bottom
+- Element có `display:inline` có thể set được margin padding left-right
 - Tổng hợp các thẻ inline:
 
   ![](images/all-inline-tags.png)
@@ -31,7 +31,7 @@
   <html>
     <head>
       <style>
-        div {
+        a {
           margin-top: 30px; /*  not work */
           margin-left: 50px; /*  works */
           padding-top: 10px; /*  not work*/
@@ -44,9 +44,9 @@
       </style>
     </head>
     <body>
-      <div>The direction property</div>
-      <div>The direction property</div>
-      <div>The direction property</div>
+      <a href="#">Google</a>
+      <a href="#">Facebook</a>
+      <a href="#">Amazon</a>
     </body>
   </html>
   ```
@@ -125,7 +125,7 @@
 ## display: float
 
 - Thuộc tính này sẽ làm cho element trôi hẳn về một bên (trái hoặc phải)
-- Ít phổ biến và chỉ dùng trong một số trường hợp cá biệt. Khi dùng xong lưu ý phải clear float đi không thôi nó sẽ làm tất cả phần layout còn lại trôi theo
+- Ít phổ biến và chỉ dùng trong một số trường hợp cá biệt. Khi dùng xong lưu ý phải clear float đi không thôi nó sẽ làm tất cả phần layout còn lại trôi theo.
 
   ![](/Programs/Stage2/2_css/images/float-img-right.png)
 
@@ -155,7 +155,7 @@
 
 ### Magic Space ([link](https://viblo.asia/p/khoang-cach-bi-an-giua-cac-inline-block-elements-Do754qMXKM6))
 
-- Đôi lúc giữa các element sẽ xuất hiện một khoảng trống khó hiểu mặc dù không có thuộc tính padding margin nào kiểm soát việc đó ví dụ như hình bên dưới. Đây không phải là lỗi mà đây là khoảng trống mặc định (như khoảng trống giữa các chữ cái trong một từ khi ta gõ văn bản)
+- Đôi lúc giữa các element sẽ xuất hiện một khoảng trống khó hiểu mặc dù không có thuộc tính padding margin nào kiểm soát việc đó ví dụ như hình bên dưới. Đây không phải là lỗi mà đây là khoảng trống mặc định (như khoảng trống giữa các chữ cái trong một từ khi ta gõ văn bản).
 
   ![](/Programs/Stage2/2_css/images/magic-space.png)
 

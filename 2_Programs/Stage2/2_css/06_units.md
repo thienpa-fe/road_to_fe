@@ -58,7 +58,7 @@
 > 1px của CSS khác với 1px trên màn hình. 1px của CSS có thể gồm nhiều px trên màn hình
 > Đọc thêm về đơn vị tại [đây](https://viblo.asia/p/cung-tim-hieu-ve-nguyen-tu-cua-the-gioi-front-end-phan-1-pixel-4P856PoOZY3)
 
-![](/Programs/Stage2/2_css/images/css-units.png)
+![](images/css-units.png)
 
 ## So sánh
 

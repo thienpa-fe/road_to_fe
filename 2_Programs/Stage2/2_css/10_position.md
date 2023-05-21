@@ -2,6 +2,8 @@
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
+![](images/css-position-banner.png)
+
 ## Định nghĩa
 
 - Thuộc tính CSS position quyết định vị trí hiển thị của một element trên viewport của trình duyệt bằng việc căn chỉnh toạ độ 4 hướng top right bottom left
@@ -11,7 +13,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 - Khái niệm này định nghĩa thứ tự hiển thị của các thành phần lên trang web. Giống như việc viết văn bản, ta sẽ viết theo chiều từ trái qua phải, từ trên xuống dưới thì flow của trang web cũng vậy. Nó cũng sẽ hiển thị từ trái qua phải và mặc định hiển thị từ trên xuống dưới
 
-## postion: static
+## position: static
 
 - Đây là giá trị mặc định của thuộc tính. Element được set giá trị này sẽ nằm yên và không bị ảnh hưởng khi được set các thuộc tính định vị như `top, right, bottom, left, z-index`
 
@@ -24,9 +26,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 - Khác với relative, absolute sẽ làm cho element tách khỏi layout và các element khác sẽ nhanh chóng lấp vào chỗ trống của element bị tách đó dựa theo `normal flow`
 
-- Element được set giá trị này sẽ có vị trí tuyệt đối so với phần tử cha gần nhất cũng được định nghĩa thuộc tính position. Vị trí mặc định element là top, left của element cha
+- Element được set giá trị này sẽ có vị trí tuyệt đối so với phần tử cha gần nhất cũng được định nghĩa thuộc tính position (bất kể giá trị gì trừ `static`). Vị trí mặc định element là top, left của element cha
 
-- Nếu không tìm thấy element cha có thuộc tính postion, nó sẽ tìm thêm ra ngoài các element khác đến khi nào tìm được có phần tử có thuộc tính position
+- Nếu không tìm thấy element cha có thuộc tính position, nó sẽ tìm thêm ra ngoài các element khác đến khi nào tìm được có phần tử có thuộc tính position
 
 ## position: fixed
 
@@ -42,23 +44,25 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 ## Z Index
 
-- Đây là khái niệm không gian 3 chiều (trục Ox Oy Oz) áp dụng vào việc dàn layout web. Thuộc tính z-index sẽ giúp ta xếp lớp được các element khi chúng nằm chồng lên nhau. Cái nào xuất hiện trước, cái nào che lấp cái nào
+- Đây là khái niệm không gian 3 chiều (trục Ox Oy Oz) áp dụng vào việc dàn layout web. Thuộc tính z-index sẽ giúp ta xếp lớp được các element khi chúng nằm chồng lên nhau. Cái nào xuất hiện trước, cái nào che lấp cái nào.
 
-- Chỉ số z-index càng cao thì element sẽ càng nằm trên cùng. Chỉ số ngay tại browser viewport là 0, nếu element có chỉ số z-index âm thì sẽ không hiển thị, vì nó nằm sau viewport
+  ![](images/css-z-index.png)
 
-- Ở ví dụ bên dưới block màu cam có z-index cao hơn block màu xanh lá nên nó sẽ có cảm giác như "nằm gần mắt" user hơn và che lấp đi block màu xanh lá
+- Chỉ số z-index càng cao thì element sẽ càng nằm trên cùng. Chỉ số ngay tại browser viewport là 0, nếu element có chỉ số z-index âm thì sẽ không hiển thị, vì nó nằm sau viewport.
 
-![](images/css-z-index.png)
+  ![](images/z-index.png)
 
-```css
-.green-block {
-  z-index: 1;
-}
+- Syntax:
 
-.orage-block {
-  z-index: 2;
-}
-```
+  ```css
+  .green-block {
+    z-index: 1;
+  }
+
+  .orage-block {
+    z-index: 2;
+  }
+  ```
 
 ## Các vị trí điển hình trong một phần tử element
 

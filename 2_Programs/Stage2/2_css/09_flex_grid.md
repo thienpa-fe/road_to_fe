@@ -8,7 +8,7 @@ https://dev.to/harishrajora12/getting-started-with-css-flexbox-tutorial-3g96
 
 - Cấu tạo flexbox
 
-  ![](/Programs/Stage2/2_css/images/flexbox-axis.png)
+  ![](images/flexbox-axis.png)
 
   - Gồm 2 phần chính là flex container và flex item. Để triển khai một flexbox thì bắt buộc cần phải có đủ 2 thành phần này
 
@@ -54,8 +54,9 @@ https://dev.to/harishrajora12/getting-started-with-css-flexbox-tutorial-3g96
 ## Grid
 
 ### Track line
-  - Trackline = columns + 1
-  - Muốn select range để rải layout từ đầu đến cuối mà k rõ số column thì 1 -> -1
+
+- Trackline = columns + 1
+- Muốn select range để rải layout từ đầu đến cuối mà k rõ số column thì 1 -> -1
 
 ## Sự khác nhau giữa flex và grid
 

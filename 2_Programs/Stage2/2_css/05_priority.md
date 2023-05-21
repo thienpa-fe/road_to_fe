@@ -45,7 +45,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
   - `Inline style` có độ ưu tiên cao nhất để áp dụng css lên html element
   - 2 cách còn lại là `internal` và `external` sẽ có độ ưu tiên ngang nhau => Cách nào được viết ở dòng dưới thì sẽ được apply
 
-  ![](/Programs/Stage2/2_css/images/css-priority.png)
+  ![](images/css-priority.png)
 
   ### Độ ưu tiên giữa các Selectors
 
@@ -61,6 +61,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
     | \*         | 0       |
 
   - Code ví dụ so sánh selector tag name và tag name + class
+
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -70,7 +71,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
           /* Priority: 1 + 10 = 11  */
-          h1.title { 
+          h1.title {
             color: turquoise;
             color: turquoise !important; /* Priority: 11 + 999999  */
           }

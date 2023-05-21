@@ -26,7 +26,7 @@
 
 - Bảng pseudo class:
 
-  ![](/Programs/Stage2/2_css/images/pseudo-class.png)
+  ![](images/pseudo-class.png)
 
 # Pseudo elements
 
@@ -42,38 +42,36 @@
 
 - Bảng pseudo element:
 
-  ![](/Programs/Stage2/2_css/images/pseudo-element.png)
+  ![](images/pseudo-element.png)
 
-## :before và :after
+## ::before và ::after
 
 - Đây là 2 pseudo element được sử dụng phổ biến. Nó sẽ thêm pseudo element vào phía trước hoặc phía sau của element gốc
 
-```html
-<p>Target element</p>
-```
+  ```html
+  <p>Target element</p>
+  ```
 
-```css
-p:before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background-color: teal;
-  display: inline-block;
-}
+  ```css
+  p::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: teal;
+    display: inline-block;
+  }
 
-p:after {
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background-color: tomato;
-  display: inline-block;
-}
-```
+  p::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: tomato;
+    display: inline-block;
+  }
+  ```
 
-- Preview:
+- Kết quả:
 
-  ![](/Programs/Stage2/2_css/images/pseudo-after-before-demo.png)
-
-
+  ![](images/pseudo-after-before-demo.png)

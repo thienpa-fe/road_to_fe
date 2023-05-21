@@ -1,8 +1,9 @@
 # CSS Selectors
 
-## Định nghĩa
+![](images/css-selectors-banner.png)
 
-- Là những bộ chọn theo các điều kiện yếu tố khác nhau cho phép chiết tách thành element trên html để áp dụng style css hoặc xử lý logic
+## Định nghĩa
+Là những bộ chọn theo các điều kiện yếu tố khác nhau cho phép chiết tách thành element trên html để áp dụng style css hoặc xử lý logic.
 
 ## Id
 
