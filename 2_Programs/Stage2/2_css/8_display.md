@@ -18,9 +18,11 @@
 ## display: inline
 
 - Chiều rộng sẽ bằng đúng phần content của element. Các element sẽ cùng nằm trên một hàng đến khi nào hết chiều rộng của viewport thì mới rơi xuống dưới
-- Element có `display:inline` sẽ _không thể set width, height, margin padding top-bottom_
-- Element có `display:inline` _có thể set được margin padding left-right_
-- Các loai html tag có thuộc tính mặc định display inline bao gồm: `span`,
+- Element có `display:inline` sẽ không thể set width, height, margin padding top-botto
+- Element có `display:inline` có thể set được margin padding left-righ
+- Tổng hợp các thẻ inline:
+
+  ![](images/all-inline-tags.png)
 
   ![](/Programs/Stage2/2_css/images/css-display-inline.png)
 
@@ -29,21 +31,22 @@
   <html>
     <head>
       <style>
-        p {
-          display: inline;
-          margin-top: 30px; /*  not works */
-          margin-right: 50px; /*  not works */
+        div {
+          margin-top: 30px; /*  not work */
+          margin-left: 50px; /*  works */
+          padding-top: 10px; /*  not work*/
+          padding-left: 10px; /*  works*/
           height: 100px; /*  not works */
-          width: 100px; /*  not works */
+          width: 100px; /*  not works*/
           background: teal;
           color: white;
         }
       </style>
     </head>
     <body>
-      <p>The direction property</p>
-      <p>The direction property</p>
-      <p>The direction property</p>
+      <div>The direction property</div>
+      <div>The direction property</div>
+      <div>The direction property</div>
     </body>
   </html>
   ```
@@ -52,8 +55,10 @@
 
 - Khác với display inline, thuộc tính này mặc định sẽ làm cho element mở rộng ra và chiếm trọn 1 dòng rộng bằng độ rộng của trình duyệt, đẩy hết các element khác xuống dòng
 - Element có display block sẽ set được width height, padding margin top bottom left right đầy đủ
-- Các loại html tag có thuộc tính mặc định display block bao gồm: `div`, `p`
-  , `section`, `form`
+- Tổng hợp các thẻ html có display mặc định là block:
+
+  ![](images/all-block-tags.png)
+
   ![](/Programs/Stage2/2_css/images/css-display-block.png)
 
   ```html
@@ -62,25 +67,21 @@
     <head>
       <style>
         div {
-          background: lightblue;
+          margin-top: 30px; /*  works */
+          margin-left: 50px; /*  works */
+          padding-top: 10px; /*  works*/
+          padding-left: 10px; /*  works*/
+          height: 100px; /*  works */
+          width: 100px; /*  works*/
+          background: teal;
           color: white;
-          border: 1px solid tomato;
-        }
-
-        div.first {
-          display: block;
-          color: red;
-          height: 30px;
-          margin: 10px;
-          padding: 30px;
-          /* width: 100px */
         }
       </style>
     </head>
     <body>
-      <div class="first">This is first div block</div>
-      <div>This is div</div>
-      <div>This is div</div>
+      <div>The direction property</div>
+      <div>The direction property</div>
+      <div>The direction property</div>
     </body>
   </html>
   ```
@@ -180,8 +181,7 @@
   </html>
   ```
 
-- Có các cách sau để khắc phục
-
+- Cách khắc phục:
   ![](/Programs/Stage2/2_css/images/magic-space-fixed.png)
 
   - Viếc các thẻ liền kề nhau: Cách này sẽ làm code nằm hết lên một dòng và trở nên khó đọc với dev
@@ -195,5 +195,3 @@
 
   - Sử dụng margin với số âm
   - Set thuộc tính font-size
-
-
