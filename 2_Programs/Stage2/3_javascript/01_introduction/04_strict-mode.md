@@ -1,6 +1,10 @@
 # Strict mode
 
-- Bản thân JS từ khi được tạo ra là một ngôn ngữ khá là linh hoạt và "dễ dãi":
+![](../images/use-strict-banner.png)
+
+Chế độ nghiêm ngặt thường được sử dụng trong source code của các thư viện hay framework giúp cho việc viết code được chặt chẽ hơn tránh các lỗi lặt vặt nhưng gây hậu quả nghiêm trọng.
+
+Bản thân JS từ khi được tạo ra là một ngôn ngữ khá là linh hoạt và "dễ dãi":
 
   - Không cần định nghĩa kiểu dữ liệu, gán cho nó giá trị gì thì nó sẽ là kiểu dữ liệu của giá trị đó
 
