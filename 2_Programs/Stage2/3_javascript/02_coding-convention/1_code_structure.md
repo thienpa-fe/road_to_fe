@@ -62,10 +62,15 @@ alert('World');
     ![](../images/comment-hell.png)
 
 - Có 2 loại comment
+
   - Comment single line (//)
+
     ```js
     // console.log('this line is commented')
     ```
+
+    ![](../images/js-comment-1line.png)
+
   - Comment multiple lines (/\*\* \*/)
     ```js
     /**
@@ -74,3 +79,4 @@ alert('World');
      * ...
      */
     ```
+    ![](../images/js-comment-docs.png)

@@ -159,7 +159,7 @@
 
 https://www.youtube.com/watch?v=kAI0D5CJjpY
 
-![](images/box-sizing.png)
+![](images/box-sizing.jpeg)
 
 - Là thuộc tính dùng để điều chỉnh kích thước element trong việc hiển thị phụ thuộc vào việc tính toán width và height dựa trên content, padding, border
 

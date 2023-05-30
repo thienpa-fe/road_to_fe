@@ -1,11 +1,12 @@
-'use strict';
+/*  Variable declaration */
+// 'use strict';
+// username = 'admin';
+// console.log(username);
 
-username = 'admin';
-console.log(username);
-
-// "use strict";
-// myFunction();
-
-// function myFunction() {
-//   y = 3.14;   // This will also cause an error because y is not declared
+/*  Scope */
+// 'use strict';
+// function sayHello() {
+//   name = 'admin';
 // }
+// sayHello();
+// console.log(name);
