@@ -3,17 +3,20 @@
 ## Flex (Flexbox)
 
 https://cssreference.io/flexbox/
+
 https://viblo.asia/p/huong-dan-day-du-ve-css-flexbox-maGK7J9a5j2
+
 https://dev.to/harishrajora12/getting-started-with-css-flexbox-tutorial-3g96
+
+https://yoksel.github.io/flex-cheatsheet/
+
+https://flexboxsheet.com/
 
 - Cấu tạo flexbox
 
   ![](images/flexbox-axis.png)
 
   - Gồm 2 phần chính là flex container và flex item. Để triển khai một flexbox thì bắt buộc cần phải có đủ 2 thành phần này
-
-- https://yoksel.github.io/flex-cheatsheet/
-- https://flexboxsheet.com/
 
 ## Các thuộc tính dành cho flex container
 

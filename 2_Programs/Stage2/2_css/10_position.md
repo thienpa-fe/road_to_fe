@@ -48,8 +48,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
   ![](images/css-z-index.png)
 
-- Chỉ số z-index càng cao thì element sẽ càng nằm trên cùng. Chỉ số ngay tại browser viewport là 0, nếu element có chỉ số z-index âm thì sẽ không hiển thị, vì nó nằm sau viewport.
-
   ![](images/z-index.png)
 
 - Syntax:
