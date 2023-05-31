@@ -4,11 +4,21 @@
 
 - Khi một ứng dụng hoạt động, nó sẽ khởi tạo dữ liệu cần thiết để chương trình hoạt động ổn định và những dữ liệu đó được xử lý tuỳ theo các mục đích khác nhau đã được lập trình sẵn
 - JS cũng như các ngôn ngữ khác sẽ dùng biến để lưu trữ những thông tin và dữ liệu đó. Các biến này sẽ được đặt tên sao cho dễ nhớ và dễ nhận biết nó đang lưu trữ dữ liệu gì
-- JS cung cấp 4 cách để khai báo một biến:
+- JS cung cấp 4 cách để khai báo một biến, chia làm 2 nhóm - khai báo biến có thể gán lại giá trị và biến không thể gán giá trị:
 
-  - Sử dụng keyword `var`
-  - Sử dụng keyword `let`
-  - Sử dụng keyword `const`
+  - Sử dụng keyword `var` (Gán lại được giá trị)
+  - Sử dụng keyword `let` (Gán lại được giá trị)
+  - Sử dụng keyword `const` (Không gán lại được giá trị)
+  - Không sử dụng keyword nào cả - Cách này không được khuyến khích sử dụng
+
+    ```js
+    var fullName = 'John Wick';
+    const GUNS_COUNT = 1000;
+    let age = 30;
+    address = 'New York';
+    ```
+
+  > Lưu ý: keyword `const` sau này khi làm việc với JS thì không những dùng để định nghĩa biến hằng mà còn dùng để định nghĩa cho các biến bình thường tránh bị thay đổi giá trị mà không kiểm soát được. Sự khác nhau giữa var, const, let cũng sẽ được tìm hiểu ở phần ES6
 
 - Các bước để khai báo ra một biến:
   - Định nghĩa loại biến
@@ -138,6 +148,8 @@ age = 50;
 
 ### Primitive Wrapper Object
 
+- Primitive Wrapper Object là một loại Object đại diện cho kiểu dữ liệu nguyên thuỷ. Được tự động tạo ra khi truy cập vào một thuộc tính hay một hàm dựa trên giá trị primitive đó
+
 - Có 3 kiểu dữ liệu primitive là number, boolean, string sẽ có thêm một wrapper bên ngoài, vd string sẽ có object String, number có object Number, boolean có object Boolean. Mục đích để cung cấp thêm các method sẵn có được gắn trong các object đó gọi là built-in methods hay static method
 
   ```js
@@ -161,19 +173,25 @@ age = 50;
   temp = null;
   ```
 
-- So sánh giữa Primitive Wrapper Object và Reference Data Type:
+- So sánh giữa Primitive Wrapper Object (implicit) và Reference Data Type(explicit):
 
   - Biến kiểu reference khi tạo ra sẽ được lưu trong bộ nhớ heap cho đến khi được giải phóng
   - Biến sau khi được wrap lại bằng Primitive Wrapper Object sẽ chỉ có tác dụng trong 1 line code. Hết line code thì biến cũng được giải phóng luôn
 
-    ```js
-    let s = 'JavaScript';
-    s.language = 'ECMAScript'; // wrapped by PWO -> assigned for s.language -> and release immediately
-    console.log(s.language); // undefined
-    ```
-> Ta sẽ không tạo ra biến PWO bằng keyword new với vài lí do
-> - Ảnh hưởng đến hiệu năng: biến PWO bản chất cũng là object và cần thêm bộ nhớ và thời gian để truy cập và xử lý
-> - Khó khăn khi xử lý condition statement, vd Number(0) mong muốn là true nhưng nó sẽ thành false
-> - Một số JS Engine trên trình duyệt (Như V8 của chrome) sẽ không được tối ưu để xử lý PWO
+        ```js
+        let s = 'JavaScript';
+        s.language = 'ECMAScript'; // wrapped by PWO -> assigned for s.language -> and release immediately
+        console.log(s.language); // undefined
+        ```
+
+    > Ta sẽ không tạo ra biến PWO bằng keyword new với vài lí do
+    >
+    > - Ảnh hưởng đến hiệu năng: biến PWO bản chất cũng là object và cần thêm bộ nhớ và thời gian để truy cập và xử lý
+    > - Khó khăn khi xử lý condition statement, vd Number(0) mong muốn là true nhưng nó sẽ thành false
+    > - Một số JS Engine trên trình duyệt (Như V8 của chrome) sẽ không được tối ưu để xử lý PWO
 
 > => Tổng kết lại: Khi sử dụng biến primitive thì hãy sử dụng đơn giản nhất có thể cùng với các method được cung cấp sẵn tuỳ theo loại dữ liệu nguyên thuỷ muốn dùng
+
+So sánh PWO như cảnh sát giao thông đưa người già qua đường. Thực hiện xong thì họ rời đi
+
+Với các kiểu dữ liệu primitive recommended nên làm việc trực tiếp với nó thay vì cố gắng tạo một kiểu dữ liệu object cho nó một cách rõ ràng (explicit) vì ngầm định JS đã tạo một PWO để wrap giá trị primitive đó rồi
