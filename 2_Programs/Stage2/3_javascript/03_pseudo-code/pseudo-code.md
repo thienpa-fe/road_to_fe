@@ -39,11 +39,11 @@ Viết một chương trình tính tổng, nhận vào 2 số nguyên khác 0 v�
 - Triển khai thành code thật
 
   ```js
-  const number1 = prompt('Input number 1: ');
-  const number2 = prompt('Input number 2: ');
+  const number1 = Number(prompt('Input number 1: '));
+  const number2 = Number(prompt('Input number 2: '));
 
   if (!isNaN(number1) && !isNaN(number2)) {
-    alert(Number(number1) + Number(number2));
+    alert(number1 + number2);
   } else {
     alert('Wrong input!');
   }
@@ -52,6 +52,8 @@ Viết một chương trình tính tổng, nhận vào 2 số nguyên khác 0 v�
 ## Thực hành
 
 - Phân tích, dựng sơ đồ khối và viết code giả cho vấn đề: Hỏi tuổi của người dùng, nếu tuổi dưới 8 in ra "Trẻ em", tuổi dưới 20 in ra "Thiếu niên", tuổi trên 20 in ra "Trưởng thành". Tuổi không hợp lệ sẽ in ra "Tuổi không hợp lệ"
+
+- Phân tích, dựng sơ đồ khối và viết pseudo code cho vấn đề: Xác định một số là số chẳn hay số lẻ
 
 - Phân tích, dựng sơ đồ khối và viết code giả cho việc call api lấy dữ liệu từ url 'https://jsonplaceholder.typicode.com/todos/1' và lấy data về, biết rằng data trả về có dạng:
 

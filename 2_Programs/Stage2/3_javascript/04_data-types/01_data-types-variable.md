@@ -146,23 +146,30 @@ age = 50;
 - Các biến thuộc loại kiểu dữ liệu này sẽ lưu trữ địa chỉ tham chiếu đến ô nhớ lưu giữ giá trị thực sự của nó
 - Với những phép gán cho object hay array thì JS sẽ copy địa chỉ tham chiếu đó => Khi 2 biến là bản sao kiểu dữ liệu tham chiếu của nhau mà có một biến thay đổi giá trị thì giá trị của biến kia cũng sẽ đổi theo
 
-### Primitive Wrapper Object
+### Primitive Wrapper Object (PWO)
 
-- Primitive Wrapper Object là một loại Object đại diện cho kiểu dữ liệu nguyên thuỷ. Được tự động tạo ra khi truy cập vào một thuộc tính hay một hàm dựa trên giá trị primitive đó
+- Primitive Wrapper Object là một loại Object đại diện cho kiểu dữ liệu nguyên thuỷ gồm number, string, boolean. Được JS tự động tạo ra tạm thời để wrap giá trị nguyên thuỷ và cung cấp các methods hay properties cần thiết để làm việc với giá trị đó. Object tạm thời này sau khi thực hiện xong line code hoặc thực hiện xong tác vụ thì sẽ được giải phóng khỏi bộ nhớ ngay lập tức và giá trị primitive ban đầu sẽ được sử dụng lại
 
-- Có 3 kiểu dữ liệu primitive là number, boolean, string sẽ có thêm một wrapper bên ngoài, vd string sẽ có object String, number có object Number, boolean có object Boolean. Mục đích để cung cấp thêm các method sẵn có được gắn trong các object đó gọi là built-in methods hay static method
+- String Object: Khi một giá trị string primitive cố gắng truy cập một properties (length) hay gọi một hàm (split). Thì JS sẽ tự động convert hoặc wrap giá trị này bởi một object String. Từ đó có thể truy cập được properties hoặc gọi đc hàm built-in.
 
   ```js
-  let language = 'JavaScript';
-  let myString = language.substring(4);
-  console.log(myString); // Script
+  const str = 'Hello';
+  console.log(str.length); // Accessing a property on the primitive string
   ```
 
-- Một biến có kiểu primitive thì sẽ không có method nào cả. Nhưng ngầm định JS sẽ wrap biến đó lại bằng Primitive Wrapper Object. cụ thể:
+- Number Object: Tương tự như String Object, cũng sẽ convert hoặc wrap giá trị number primitive lại và có thể gọi được hàm của Number. sau khi thực hiện xong thì được giải phóng
 
-  - Từ kiểu primitive sẽ tạo ra một object với kiểu dữ liệu tương ứng với giá trị khởi tạo
-  - Gọi và thực thi static method của kiểu dữ liệu này
-  - Sau đó xoá instance ngay lập tức
+  ```js
+  const num = 42;
+  console.log(num.toString()); // Calling a method on the primitive number
+  ```
+
+- Boolean Object:
+
+  ```js
+  const bool = true;
+  console.log(bool.valueOf()); // Calling a method on the primitive boolean
+  ```
 
 - Đoạn code phía trên sẽ tương đương với:
 
@@ -178,20 +185,17 @@ age = 50;
   - Biến kiểu reference khi tạo ra sẽ được lưu trong bộ nhớ heap cho đến khi được giải phóng
   - Biến sau khi được wrap lại bằng Primitive Wrapper Object sẽ chỉ có tác dụng trong 1 line code. Hết line code thì biến cũng được giải phóng luôn
 
-        ```js
-        let s = 'JavaScript';
-        s.language = 'ECMAScript'; // wrapped by PWO -> assigned for s.language -> and release immediately
-        console.log(s.language); // undefined
-        ```
+    ```js
+    let s = 'JavaScript';
+    s.language = 'ECMAScript'; // wrapped by PWO -> assigned for s.language -> and release immediately
+    console.log(s.language); // undefined
+    ```
 
-    > Ta sẽ không tạo ra biến PWO bằng keyword new với vài lí do
-    >
-    > - Ảnh hưởng đến hiệu năng: biến PWO bản chất cũng là object và cần thêm bộ nhớ và thời gian để truy cập và xử lý
-    > - Khó khăn khi xử lý condition statement, vd Number(0) mong muốn là true nhưng nó sẽ thành false
-    > - Một số JS Engine trên trình duyệt (Như V8 của chrome) sẽ không được tối ưu để xử lý PWO
+> => Tổng kết lại:
+> Ta sẽ không tạo ra biến PWO bằng keyword new với vài lí do:
+>
+> - Ảnh hưởng đến hiệu năng: biến PWO bản chất cũng là object và cần thêm bộ nhớ và thời gian để truy cập và xử lý.
+> - Một số JS Engine trên trình duyệt (Như V8 của chrome) sẽ không được tối ưu để xử lý PWO
+> - Với các kiểu dữ liệu primitive recommended nên làm việc trực tiếp với nó thay vì cố gắng tạo một kiểu dữ liệu object cho nó một cách rõ ràng (explicit) vì ngầm định JS đã tự động tạo một PWO để wrap giá trị primitive đó rồi.
 
-> => Tổng kết lại: Khi sử dụng biến primitive thì hãy sử dụng đơn giản nhất có thể cùng với các method được cung cấp sẵn tuỳ theo loại dữ liệu nguyên thuỷ muốn dùng
-
-So sánh PWO như cảnh sát giao thông đưa người già qua đường. Thực hiện xong thì họ rời đi
-
-Với các kiểu dữ liệu primitive recommended nên làm việc trực tiếp với nó thay vì cố gắng tạo một kiểu dữ liệu object cho nó một cách rõ ràng (explicit) vì ngầm định JS đã tạo một PWO để wrap giá trị primitive đó rồi
+### Reference link: https://www.javascripttutorial.net/javascript-primitive-wrapper-types

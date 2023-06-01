@@ -14,8 +14,7 @@ Dữ liệu lưu trữ trên bộ nhớ trải qua 3 giai đoạn: Cấp phát -
 
 ## Stack memory (Static memory)
 
-> Chú ý phân biệt **stack memory** và **call stack** sau này. Đây là 2 khái niệm khác nhau
-
+- Là một vùng nhớ nhỏ, có kích thước cố định, dùng để chứa / theo dõi các khai báo biến và lời gọi hàm
 - Là nơi dùng để lưu trữ các dữ liệu tĩnh (static data) bao gồm các giá trị nguyên thuỷ (primitive data type - string, number, boolean, null, undefined) và các reference trỏ đến các function, object được lưu bên bộ nhớ heap
 - Việc cấp phát bộ nhớ trong stack được gọi là cấp phát bộ nhớ tĩnh vì các data đều có thể đoán trước được size của nó. Data dạng primitive thường có data size cố định, vì thế có thể biết được số bộ nhớ cần cấp phát
 - Bộ nhớ sẽ được cấp phát ngay trước khi code được thực thi
@@ -33,6 +32,10 @@ Dữ liệu lưu trữ trên bộ nhớ trải qua 3 giai đoạn: Cấp phát -
 
 ![](../images/stack-heap-pointers.png)
 
+## Kết luận
+
+- Stack và heap hoạt động cùng nhau để quản lý bộ nhớ trong JS
+
 ## Garbage Collection
 
 - Được thực hiện bởi Garbage Collector. Dọn dẹp dữ liệu không dùng đến nữa và loại bỏ ra khỏi bộ nhớ.
@@ -49,5 +52,6 @@ Dữ liệu lưu trữ trên bộ nhớ trải qua 3 giai đoạn: Cấp phát -
 
 ![](../images/garbage-collection.jpeg)
 
-> Link tham khảo: 
+> Link tham khảo:
+>
 > - https://felixgerschau.com/javascript-memory-management

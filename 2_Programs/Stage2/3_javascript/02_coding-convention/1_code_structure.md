@@ -1,6 +1,6 @@
 # Code Structure
 
-- 1 file code sẽ được cấu tạo từ các thành phần
+- Một file code sẽ được cấu tạo từ các thành phần
   - Statement
   - Các statement sẽ tạo thành một khối lệnh hay một hàm
   - Nhiều hàm được khai báo trong một file js => Functional programming
@@ -8,7 +8,7 @@
 ## Statement
 
 - Là một cấu trúc syntax dùng để biểu diễn cho một hành động cụ thể
-- Statement hay còn gọi là một câu lệnh
+- Statement hay còn gọi là một câu lệnh, và được ngăn cách bởi dấu `;`. Có thể viết được nhiểu statement trên cùng một dòng không gây lỗi nhưng cách này cũng không được khuyến khích
 - Một tập các statement phối hợp với nhau theo một logic thì sẽ được gọi là một hàm (function)
 - Vd: Khi viết `alert('hello')` thì statement này sẽ ra lệnh cho máy tính hiện hộp thoại cảnh báo có nội dung 'hello'
 

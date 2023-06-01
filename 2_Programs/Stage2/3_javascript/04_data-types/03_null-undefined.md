@@ -3,9 +3,16 @@
   ![](../images/null-vs-undefined.png)
   https://javascript.plainenglish.io/why-does-javascript-have-both-null-and-undefined-6a42fcca9301
 
+## Null là gì ?
+- Kiểu dữ liệu null đại diện cho một giá trị không tồn tại một cách có chủ đích và giá trị của nó cũng là null luôn.
+
+## Undefined là gì ?
+
+
 ## Phân biệt null vs undefined
 
-- Biến có giá trị null hoặc undefined đều đại diện cho việc dữ liệu bị rỗng hoặc hiện không có sẵn
+- Biến có kiểu dữ liệu null hoặc undefined đều đại diện cho việc dữ liệu bị rỗng hoặc hiện không có sẵn.
+
 - Điểm khác nhau:
 
   - `undefined`: Đại diện cho các biến chưa được gán giá trị hay không có giá trị liên kết với biến. undefined sẽ mặc định được gán trong các trường hợp:

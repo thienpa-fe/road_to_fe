@@ -4,7 +4,7 @@
 
 ## Clean code là gì ?
 
-- Clean code là một các nguyên tắc đã được nghiên cứu và đúc kết qua thời gian dài. Gồm bộ các nguyên tắc trong việc trình bày và triển khai cấu trúc code, logic sao cho dễ đọc dễ bảo trì nhưng cũng ngắn gọn và không dài dòng khi số lượng code và file trong một project vốn dĩ đã quá khổng lồ và phức tạp.
+- Clean code là một các nguyên tắc đã được nghiên cứu và đúc kết qua thời gian dài. Là một bộ các nguyên tắc trong việc trình bày và triển khai cấu trúc code, logic sao cho dễ đọc dễ bảo trì nhưng cũng ngắn gọn và không dài dòng khi số lượng code và file trong một project vốn dĩ đã quá khổng lồ và phức tạp.
 
 - Ngày nay đã có những thư viện hay công cụ như prettier, eslint, sonarlint, việc của dev chỉ cần tập trung vào phát triển logic. Còn lại chất lượng code hay đánh giá logic sẽ có các thư viện này hỗ trợ
 
@@ -135,12 +135,14 @@
   ```js
   <!-- Bad -->
 
-  if(age>30) {}
-  const username = profileName??loginName;
+  if(age>30){}
+  const username=profileName??loginName;
+  const sum=1+1;
 
   <!-- Good -->
   if(age > 30) {}
   const username = profileName ?? loginName;
+  const sum = 1 + 1;
   ```
 
 - Normal variable: Đặt tên biến có nghĩa, dễ nhớ, đại diện cho giá trị mà biến đang nắm giữ
@@ -148,9 +150,11 @@
   ```js
   <!-- Bad -->
   const x = 'application/javascript';
+  const yyyymmdd = moment().format('YYYY/MM/DD');
 
   <!-- Good -->
   const typeTag = 'application/javascript';
+  const currentDate = moment().format('YYYY/MM/DD');
   ```
 
 - Constant: Đặt tên cho hằng số sẽ cần viết hoa toàn bộ, nếu tên có nhiều từ sẽ dùng dấu `_` và khai báo bằng keyword `const`
@@ -257,11 +261,19 @@ const student_age = 25;
 
 #### Upper flat case
 
-- Dùng để đặt tên cho các hằng số
+- Dùng để đặt tên cho các hằng số bao gồm:
 
-  ```js
-  const ROOT = 'admin';
-  ```
+  - Các giá trị bất biến do dev tự định nghĩa
+    ```js
+    const ROOT = 'admin';
+    const API_BASE_URL = 'https://api.example.com';
+    const MAX_RETRY_COUNT = 3;
+    ```
+  - Các giá trị toán học đã được chứng minh
+    ```js
+    const PI = 3.14159;
+    const SPEED_OF_LIGHT = 299792458; // meters per second
+    ```
 
 - Có thể kết hợp với snake_case khi đặt tên biến có nhiều từ
 
@@ -271,9 +283,9 @@ const student_age = 25;
   const CONECT_STATUS = 'ok';
   ```
 
-### Code Indentation Breakline Spacing
+### Code Indentation - Breakline Spacing
 
-- Code Indentation: Là độ thụt dòng của code, giú nhận biết việc một line code có nằm trong block code của một hàm hay có là thành phần con của một container bên ngoài nào đó không. Giá trị đơn vị thường sử dụng là 2 hoặc 4
+- Code Indentation: Là độ thụt dòng của code, giúp nhận biết việc một line code có nằm trong block code của một hàm hay có là thành phần con của một container bên ngoài nào đó không. Giá trị đơn vị thường sử dụng là 2 hoặc 4
 
   - HTML
 
@@ -368,28 +380,44 @@ const student_age = 25;
       }
       ```
 
-- Breakline: Các block code thường tách ra một dòng để dễ đọc hơn
+- Breakline:
 
-  ```js
-  function getUsername() {
-    console.log('What is your name ?');
-  }
+  - Các block code thường tách ra một dòng để dễ đọc hơn
 
-  function showUserName(username) {
-    console.log('Hello ' + username);
-  }
-  ```
+    ```js
+    function getUsername() {
+      console.log('What is your name ?');
+    }
+
+    function showUserName(username) {
+      console.log('Hello ' + username);
+    }
+    ```
+
+  - Mỗi line code chỉ nên chứa 1 statement
+    - Bad
+      ```js
+      const currentDate = new Date();
+      console.log(currentDate);
+      let sunday = false;
+      ```
+    - Good
+      ```js
+      const currentDate = new Date();
+      console.log(currentDate);
+      let sunday = false;
+      ```
 
 ### Be cafeful with Magic Number
 
 #### Magic Number là gì ?
 
-- Là các số bình thường nhưng nó được dùng trong các khối lệnh điều kiện (conditional statement) hay các phép tính toán.
+- Là các số bình thường nhưng nó được dùng trong các khối lệnh điều kiện (conditional statement) hay các tác vụ tính toán.
 - Được gọi là "magic" vì nó là một giá trị cứng (hard-code) không bao giờ thay đổi và không mang ý nghĩa rõ ràng, không biết được nó dại diện cho ai và có vai trò gì
 
   ```js
-  const requestTimeout = 2 * 3600;
-  const gender = 1;
+  const requestTimeout = 2 * 3600; // 3600 là cái gì ?
+  const gender = 1; // 1 là cái gì ?
   ```
 
 #### Cách giải quyết

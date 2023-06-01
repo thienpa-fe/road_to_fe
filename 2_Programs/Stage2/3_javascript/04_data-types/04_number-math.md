@@ -1,6 +1,8 @@
 # Number
 
-- Kiểu number đại diện cho các giá trị số trong JS bao gồm số nguyên (integer) và số thực (float), số âm và số dương
+![](../images/number-banner.png)
+
+Kiểu number đại diện cho các giá trị số trong JS bao gồm số nguyên (integer) và số thực (float), số âm và số dương
 
 ## Khai báo biến number
 
@@ -110,7 +112,7 @@ let counter = 100;
 
 ## Các phép tính toán của number với các kiểu dữ liệu khác
 
-- Tìm hiểu nhiều hơn ở phần Conversion
+- Tìm hiểu nhiều hơn ở phần [Conversion](./10_comparison_conversion.md)
 
 ## Tài liệu tham khảo
 

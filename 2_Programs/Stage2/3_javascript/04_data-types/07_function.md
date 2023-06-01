@@ -12,6 +12,8 @@
 
 
 ## Function declaration & Function Expression
+- Function declaration
+- Function expression
 
 
 ## Pure function
@@ -19,7 +21,12 @@
 ## HOF (Higher order function)
 ![](../images/higher-order-func.png)
 - 
--
 ## First class function
 
 ## Callback function (Hàm gọi lại)
+
+
+
+
+
+When a function is called, a new stack frame is created and added to the top of the stack, containing the function's execution context. This frame is popped off the stack when the function completes.
