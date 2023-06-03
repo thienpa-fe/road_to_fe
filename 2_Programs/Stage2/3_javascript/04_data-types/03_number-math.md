@@ -99,7 +99,7 @@ let counter = 100;
     ```js
     Math.max(2, 3, 1); // 3
     Math.max(-2, -3, -1); // -1
-    Math.max(); // Infinity
+    Math.max(); // -Infinity
     ```
 
   - Math.abs(): Trả về giá trị tuyệt đối của một number
@@ -109,6 +109,30 @@ let counter = 100;
     Math.abs(5); // 5
     Math.abs(-5); // -5
     ```
+
+## Infinity
+
+- Infinity là một số đặc biệt của kiểu Number. Có nghĩa là "vô cùng" và nó có giá trị lớn hơn và nhỏ hơn bất cứ số nguyên nào thuộc kiểu number
+
+  ```js
+  console.log(typeof Infinity); // number
+
+  Number.POSITIVE_INFINITY; // => Infinity
+  Number.NEGATIVE_INFINITY; // => -Infinity
+  ```
+
+  - Các phép toán với Infinity
+
+  ```js
+  Infinity + 1; // => Infinity
+  Infinity + Infinity; // => Infinity
+  Infinity * 2; // => Infinity
+  Infinity * Infinity; // => Infinity
+  Infinity / 2; // => Infinity
+
+  10 / Infinity; // => 0
+  2 / 0; // => Infinity
+  ```
 
 ## Các phép tính toán của number với các kiểu dữ liệu khác
 

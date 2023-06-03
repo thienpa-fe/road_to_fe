@@ -1,5 +1,7 @@
 # HTML script tag
 
+![](../images/script-tag-deep-dive-banner.jpeg)
+
 Phần này sẽ tập trung chi tiết hơn về thẻ `<script></script>` hỗ trợ cho việc tìm hiểu cách mà script hoạt động khi được tải về, tương tác với file html và thực thi trên trình duyệt.
 
 ## Attributes

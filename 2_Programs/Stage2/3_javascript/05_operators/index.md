@@ -49,3 +49,6 @@ Là các kí hiệu đại điện cho các phép so sánh và tính toán. Rấ
 ## Not-not operator (!!)
 
 - Toán tử này dùng để convert một giá trị bất kì thành kiểu boolean tương ứng
+
+
+## void

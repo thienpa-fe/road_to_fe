@@ -15,7 +15,6 @@
 - Các hệ thống website, ứng dụng thường sẽ cần chuyển đổi tất cả các kiểu dữ liệu về một kiểu dữ liệu đơn giản nhất để kiểm tra được trạng thái của dữ liệu hay chức năng trong mốt số trường hợp:
 
   - Kiểm tra data đã được tải về thành công chưa để show hiệu ứng loading
-
   - Kiểm tra user đã đăng nhập chưa để show form đăng nhập
   - Kiểm tra user lưu thông tin chưa để trở về trang chủ
   - ...
