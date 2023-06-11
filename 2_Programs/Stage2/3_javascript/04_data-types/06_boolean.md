@@ -53,7 +53,7 @@
     const hasData = !100; // false
     ```
 
-    > Giải thích: myData ban đầu có kiểu dữ liệu number. Khi sử dụng toán tử NOT nó sẽ convert number sang boolean, vì myData là giá trị truthy nên khi convert sẽ có giá trị true. Và kết hợp với toán tử !true -> Nghịch đảo thành false.
+    > Giải thích: myData ban đầu có kiểu dữ liệu number. Khi sử dụng toán tử NOT nó sẽ convert number sang boolean, vì myData là giá trị truthy nên khi convert sẽ có giá trị true. Và kết hợp với toán tử !true -> Phủ định lại giá trị true thành false.
 
   - Sử dụng NOT NOT operator (!!):
 
@@ -101,3 +101,12 @@
 | NaN         | false   |
 | null        | false   |
 | undefined   | false   |
+
+## Bài tập
+
+1. Cho 2 biến `isAuthenticated` và `isLogin` với kiểu dữ liệu boolean mặc định lần lược là true và false. Làm thế nào để hoán đổi giá trị cho 2 biến trên ?
+
+   ```js
+   let isAuthenticated = true;
+   let isLogin = false;
+   ```

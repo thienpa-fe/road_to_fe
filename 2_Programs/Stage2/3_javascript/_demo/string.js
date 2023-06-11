@@ -8,3 +8,7 @@
  * 7. Làm sao để thêm khoảng trắng (space) vào trước mỗi chữ viết hoa
  * 8. Làm sao để chuyển chuyển đổi một dãy số tài khoản ngân hàng gồm 16 số thành dạng `**********101095`
  */
+
+const str = 'Hello';
+console.log(!!str);
+console.log(Boolean(str));

@@ -57,4 +57,6 @@ Một số phương thức tương tác với dữ liệu cũng sẽ hoạt đ�
 
 # Link tham khảo
 
-- https://www.freecodecamp.org/news/mutability-vs-immutability-in-javascript/
+- https://www.freecodecamp.org/news/mutability-vs-immutability-in-javascript
+
+- https://blog.devgenius.io/mutable-and-immutable-in-javascript-78a3cbc6187c

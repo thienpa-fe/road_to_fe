@@ -96,6 +96,7 @@ console.log(weather[weather.length - 1]); // 'n'
     ![](../images/primitive-object-string.png)
 
 ## Methods / properties tương tác với string
+
 length
 
 ![](../images/string-methods.jpeg)

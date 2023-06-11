@@ -24,10 +24,18 @@
 
 ![](../images/devtool-console.png)
 
+#### Tác dụng
+
 - Hiển thị thông tin, message lỗi, trạng thái của web để ta có thể dễ dàng theo dõi
 - Cho phép ta viết code JS để tương tác với trình duyệt như gán event, trích xuất HTML element, xử lý tính toán và log giá trị
 - Sử dụng rất hiệu quả cho việc debug chương trình
 - Các hàm show popup hay dùng như `prompt()`, `console.log()`, `alert()`
+
+#### Lưu ý
+
+- Khi làm việc với JS trên tab console của dev tool ở phần khai báo biến sẽ xuất hiện các dòng như `undefined`. Đây là tính năng có sẵn của dev took sẽ tự gợi ý show kết quả hay giá trị return khi ta gõ một statement nào đó cho ta thấy được kết quả trả về ngay lập tức.
+
+  ![](../images/dev-tool-return.png)
 
 ### Network
 
