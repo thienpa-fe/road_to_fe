@@ -141,7 +141,7 @@ age = 50;
 
 ### Kiểu tham chiếu (reference type)
 
-- Bao gồm: object, function
+- Bao gồm: object, function, array
 - Khi gọi biến thì sẽ trỏ đến địa chỉ ô nhớ mà biến đang lưu -> Lấy giá trị thực sự đang chứa trong địa chỉ đó ra
 - Các biến thuộc loại kiểu dữ liệu này sẽ lưu trữ địa chỉ tham chiếu đến ô nhớ lưu giữ giá trị thực sự của nó
 - Với những phép gán cho object hay array thì JS sẽ copy địa chỉ tham chiếu đó => Khi 2 biến là bản sao kiểu dữ liệu tham chiếu của nhau mà có một biến thay đổi giá trị thì giá trị của biến kia cũng sẽ đổi theo

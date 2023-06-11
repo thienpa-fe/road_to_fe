@@ -64,7 +64,7 @@
 
 - Để nâng cao khả năng viết clean code:
   - **Logic quality**: Không ngừng luyện tập nâng cao khả năng tư duy logic, giải quyết vấn đề bằng cách tìm hiểu nghiên cứu các thuật toán và triển khai nhiều ví dụ giải quyết vấn đề bằng việc coding
-  - **Syntax quality**: Việc trình bày code sạch đẹp rất quan trọng và nên được hình thành thói quen càng sơms càng tốt. Hiện nay có Prettier extension (sẽ tìm hiểu ở dưới) rất phổ biển phục vụ việc format lại code theo config giúp tiết kiệm thời gian cho dev trong việc coding mà vẫn đảm bảo clean
+  - **Syntax quality**: Việc trình bày code sạch đẹp rất quan trọng và nên được hình thành thói quen càng sớm càng tốt. Hiện nay có Prettier extension (sẽ tìm hiểu ở dưới) rất phổ biển phục vụ việc format lại code theo config giúp tiết kiệm thời gian cho dev trong việc coding mà vẫn đảm bảo clean
 
 ### Prettier (https://prettier.io)
 

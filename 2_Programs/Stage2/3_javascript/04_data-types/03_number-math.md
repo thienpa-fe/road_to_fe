@@ -26,7 +26,6 @@ let counter = 100;
 ## NaN (Not a Number)
 
 - Đại diện cho một giá trị không phải là Number. Bất cứ phương thức nào của Number mà không convert được giá trị truyền vào thì sẽ trả về NaN
-- Khi cố gắng parse một giá trị thành number mà không thành công, nó sẽ trả về undefined
 
   ```js
   Number('unicorn'); // NaN
@@ -133,6 +132,42 @@ let counter = 100;
   10 / Infinity; // => 0
   2 / 0; // => Infinity
   ```
+
+## Other expression syntax
+
+```js
+  const myAge = 30;
+  const myAge = myAge + 1;
+  const myAge = myAge++;
+  const myAge += 1;
+  const isEvenAge = myAge % 2;
+```
+
+> - `/`: Chia lấy phần nguyên
+> - `%`: Chia lấy phần dư
+
+```js
+  const data = 30;
+  const data += 1;
+  const data -= 10;
+  const data *= 5;
+  const data /= 5;
+```
+
+```js
+// Khác nhau giữa i++ và ++i trong JavaScript
+
+let a = 10;
+let b = a++;
+let c = ++a;
+
+console.log(b); // ?
+console.log(c); // ?
+```
+
+> - i++: (post-increment operator): Toán tử tăng sau. Giá trị được gán vào biến rồi mới tăng lên một đơn vị và lưu vào bộ nhớ.
+>
+> - ++i: (pre-increment operator): Toán tử tăng trước. Giá trị được tăng lên một đơn vị rồi mới gán vào biến.
 
 ## Các phép tính toán của number với các kiểu dữ liệu khác
 

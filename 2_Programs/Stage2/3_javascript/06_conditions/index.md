@@ -161,6 +161,8 @@ IF weather = 'RAIN' goSleep ELSE goOut
 
     ![](../images/conditions-hell.png)
 
+    ![](../images/condition-hell-2.webp)
+
   - Solution: Phân tách các điều kiện nhỏ ra và kiểm soát các trường hợp một cách tối ưu để tránh việc số lượng cases cần cover quá nhiều dẫn đến source bị scale lớn không cần thiết.
 
 - Falsy và Truthy:
@@ -168,6 +170,7 @@ IF weather = 'RAIN' goSleep ELSE goOut
   - Các conditions statement có thể nhận vào các giá trị falsy hay truthy và xem đó như là kết quả của condtion từ đó thực thi các block code tương ứng
 
     - Giá trị falsy: false, '', null, undefined, NaN, 0
+
     - Giá trị truthy: true, number > 0, string
 
     ```js

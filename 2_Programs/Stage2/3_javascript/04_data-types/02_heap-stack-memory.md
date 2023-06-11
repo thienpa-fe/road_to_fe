@@ -26,7 +26,7 @@ Dữ liệu lưu trữ trên bộ nhớ trải qua 3 giai đoạn: Cấp phát -
 ## Heap memory (Dynamic Memory)
 
 - Đây là vùng nhớ động và JS Engine trên browser không cấp phát bộ nhớ cố định cho nó
-- Vùng nhớ này dùng để lưu trữ các dữ liệu phức tạp và dạng tham thiếu như object, function.
+- Vùng nhớ này dùng để lưu trữ các dữ liệu phức tạp và dạng tham thiếu như object, function, array.
 - Không giống như stack memory. Việc cấp phát bộ nhớ của heap không biết trước được data size nên sẽ không có giới hạn cụ thể. Cần bao nhiêu cấp bấy nhiêu -> Việc cấp phát bộ nhớ trong stack được gọi là cấp phát bộ nhớ động
 - Bộ nhớ được cấp khác trong quá trình chạy (runtime)
 
