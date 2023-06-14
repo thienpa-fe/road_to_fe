@@ -9,6 +9,20 @@
  * 8. Làm sao để chuyển chuyển đổi một dãy số tài khoản ngân hàng gồm 16 số thành dạng `**********101095`
  */
 
-const str = 'Hello';
-console.log(!!str);
-console.log(Boolean(str));
+const inputString = 'helloworld!';
+
+// Bai 1
+const reversedString = inputString.split('').reverse().join('');
+console.log(inputString, reversedString);
+
+// Bai 2
+const upperCaseFirstCharString =
+  inputString[0].toUpperCase() + inputString.substring(1);
+console.log(inputString, upperCaseFirstCharString);
+
+// Bai 3
+// Bai 4
+// Bai 5
+// Bai 6
+// Bai 7
+// Bai 8

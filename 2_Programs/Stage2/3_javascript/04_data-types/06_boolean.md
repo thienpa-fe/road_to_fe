@@ -88,19 +88,19 @@
 
 ## Convert everything to Boolean
 
-| Other       | Boolean |
-| ----------- | ------- |
-| 0           | false   |
-| 1           | true    |
-| ''          | false   |
-| ' '         | true    |
-| {}          | true    |
-| { age: 30 } | true    |
-| []          | true    |
-| [1,2,3]     | true    |
-| NaN         | false   |
-| null        | false   |
-| undefined   | false   |
+| Type   | Other       | Boolean |
+| ------ | ----------- | ------- |
+| falsy  | 0           | false   |
+|        | NaN         | false   |
+|        | null        | false   |
+|        | undefined   | false   |
+|        | ''          | false   |
+| truthy | 1           | true    |
+|        | ' '         | true    |
+|        | {}          | true    |
+|        | { age: 30 } | true    |
+|        | []          | true    |
+|        | [1,2,3]     | true    |
 
 ## Bài tập
 

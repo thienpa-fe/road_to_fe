@@ -349,6 +349,33 @@ console.log('cloned car', clonedCar); // {color: 'yellow', body: { slot: 7 }}
 
 ## So sánh Object
 
+- Khi so sánh object. Kết quả chỉ đúng khi địa chỉ của các object được so sánh có cùng địa chỉ tham chiếu đến cùng một ô nhớ
+- Để so sánh trong JS:
+
+  - `==`: Chỉ so sánh về mặt giá trị
+
+  - `===`: Đối với kiểu reference, sẽ so sánh về giá trị và kiểu dữ liệu
+
+  - `Object.is()`: Method của kiểu Object cho phép so sánh 2 giá trị bất kì.
+
+    ```js
+    const person1 = {
+      name: 'Dev',
+    };
+    const person2 = {
+      name: 'Dev',
+    };
+
+    person1 === person2; // => false
+    person1 == person2; // => false
+    Object.is(person1, person2); // => false
+
+    const otherPerson = person1;
+
+    person1 === otherPerson; // true;
+    person1 == otherPerson; // true;
+    ```
+
 ## Thực hành
 
 - Khởi tạo một object về bản thân trong đó có các thuộc tính (properties) và phương thức (methods) tự chọn. Gọi một vài phương thức của object và kiểm tra kết quả.
@@ -471,3 +498,7 @@ console.log('cloned car', clonedCar); // {color: 'yellow', body: { slot: 7 }}
 
   person.sayName(); // ?
   ```
+
+## Link tham khảo
+
+- Deep copy và shallow copy của object: https://anonystick.com/blog-developer/phong-van-su-khac-nhau-giua-shallow-copying-va-deep-copying-trong-object-javascript-2019112823755023

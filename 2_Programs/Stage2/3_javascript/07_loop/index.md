@@ -16,3 +16,8 @@ Cấu trúc lặp (vòng lặp) là khái niệm phổ biến và rất hay đư
 
 - Phiên bản ES5 của JS hỗ trợ thêm các hàm có thể lặp qua một array, cho phép can thiệp và xử lý logic từng phần tử trong array đó vd: map(), reduce(), filter(),...
 - Tham khảo thêm các hàm này ở phần [Data Type Array](/2_Programs/Stage2/3_javascript/04_data-types/08_array.md)
+
+
+## Bài tập
+
+1. Viết hàm dùng để đảo ngược một string mà không được dùng method.
