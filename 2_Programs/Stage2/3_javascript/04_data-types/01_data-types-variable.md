@@ -148,6 +148,8 @@ age = 50;
 
 ### Primitive Wrapper Object (PWO)
 
+![](../images/pwo.png)
+
 - Primitive Wrapper Object là một loại Object đại diện cho kiểu dữ liệu nguyên thuỷ gồm number, string, boolean. Được JS tự động tạo ra tạm thời để wrap giá trị nguyên thuỷ và cung cấp các methods hay properties cần thiết để làm việc với giá trị đó. Object tạm thời này sau khi thực hiện xong line code hoặc thực hiện xong tác vụ thì sẽ được giải phóng khỏi bộ nhớ ngay lập tức và giá trị primitive ban đầu sẽ được sử dụng lại
 
 - String Object: Khi một giá trị string primitive cố gắng truy cập một properties (length) hay gọi một hàm (split). Thì JS sẽ tự động convert hoặc wrap giá trị này bởi một object String. Từ đó có thể truy cập được properties hoặc gọi đc hàm built-in.
@@ -192,9 +194,9 @@ age = 50;
     ```
 
 > => Tổng kết lại:
-> Ta sẽ không tạo ra biến PWO bằng keyword new với vài lí do:
+> Ta sẽ không dùng biến có kiểu dữ liệu primitive bằng cách tạo ra Object với keyword `new` vì:
 >
-> - Ảnh hưởng đến hiệu năng: biến PWO bản chất cũng là object và cần thêm bộ nhớ và thời gian để truy cập và xử lý.
+> - Ảnh hưởng đến hiệu năng: biến Object khi được tạo ra bằng từ khoá `new` sẽ cần thêm bộ nhớ và thời gian để truy cập và xử lý vì nó được xem như kiểu dữ liệu reference. Sử dụng một biến primitive bằng việc khai báo một biến reference thì thật không hợp lí.
 > - Một số JS Engine trên trình duyệt (Như V8 của chrome) sẽ không được tối ưu để xử lý PWO
 > - Với các kiểu dữ liệu primitive recommended nên làm việc trực tiếp với nó thay vì cố gắng tạo một kiểu dữ liệu object cho nó một cách rõ ràng (explicit) vì ngầm định JS đã tự động tạo một PWO để wrap giá trị primitive đó rồi.
 

@@ -78,6 +78,24 @@ const developer = {
   console.log(person.isRich); // undefined
   ```
 
+- Có thể khai báo một object với shorthand như sau
+
+  ```js
+  function makeUser(name, age) {
+    return {
+      name: name,
+      age: age,
+    };
+  }
+
+  function makeUserShorthand(name, age) {
+    return {
+      name, // same as name: name
+      age, // same as age: age
+    };
+  }
+  ```
+
 ## Access properties
 
 - JS hỗ trợ 3 cách để truy cập được vào thuộc tính của object:
@@ -188,6 +206,25 @@ const developer = {
   I has a computer. This is good for me.
   ```
 
+- Trường hợp sử dụng:
+
+  - Thường dùng để đại diện cho object ở trong một scope nào đó
+  - Có tính tái sử dụng
+
+    ```js
+    const person = {
+      name: 'John',
+      age: 30,
+      greet() {
+        console.log(
+          `Hello, my name is ${this.name} and I'm ${this.age} years old.`
+        );
+      },
+    };
+
+    person.greet();
+    ```
+
 ### Binding this
 
 - Khi một object hay một function được tạo ra và có sử dụng keyword `this`. Thì con trỏ `this` cũng sẽ được tạo ra và và được bind với object. Việc bind với object nào sẽ phụ thuộc vào một số điều kiện.
@@ -238,6 +275,27 @@ const developer = {
   - Execution context: Mỗi method khi được gọi sẽ tạo ra một execution context của riêng nó. Khi đó `this` cũng sẽ trỏ đến các object khác nhau. Sẽ tìm hiểu trong phần [Function](./../08_function/index.md)
 
     ![](/2_Programs/Stage2/3_javascript/images/function-execution-context.png)
+
+    ```js
+    const student = {
+      name: 'Peter',
+      gotoWork: function () {
+        console.log('this in gotoWork', this);
+
+        function doSomething() {
+          console.log('this in doSomething', this);
+        }
+
+        const doSomething2 = () => {
+          console.log('this in doSomething', this);
+        };
+
+        doSomething();
+        doSomething2();
+      },
+    };
+    student.gotoWork();
+    ```
 
 ### Explicit binding
 
@@ -338,7 +396,9 @@ console.log('cloned car', clonedCar); // {color: 'yellow', body: { slot: 7 }}
 
   ```js
   let copiedObject = JSON.parse(JSON.stringify(originalObject));
+  ```
 
+  ```js
   const obj3 = { a: 0, b: { c: 0 } };
   const obj4 = JSON.parse(JSON.stringify(obj3));
 
@@ -499,6 +559,8 @@ console.log('cloned car', clonedCar); // {color: 'yellow', body: { slot: 7 }}
   person.sayName(); // ?
   ```
 
-## Link tham khảo
+## Tham khảo
 
 - Deep copy và shallow copy của object: https://anonystick.com/blog-developer/phong-van-su-khac-nhau-giua-shallow-copying-va-deep-copying-trong-object-javascript-2019112823755023
+
+- Phương thức Object:

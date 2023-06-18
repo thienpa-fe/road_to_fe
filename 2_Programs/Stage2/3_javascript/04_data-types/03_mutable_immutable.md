@@ -55,7 +55,7 @@ Một số phương thức tương tác với dữ liệu cũng sẽ hoạt đ�
 
 ![](../images/immutable-array.png)
 
-# Link tham khảo
+# Tham khảo
 
 - https://www.freecodecamp.org/news/mutability-vs-immutability-in-javascript
 

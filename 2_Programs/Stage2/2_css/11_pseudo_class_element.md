@@ -75,3 +75,7 @@
 - Kết quả:
 
   ![](images/pseudo-after-before-demo.png)
+
+## Tham khảo
+
+- https://www.freecodecamp.org/news/the-difference-between-pseudo-classes-and-elements-in-css/?fbclid=IwAR1kAqeaEyuspH0Sk5fA43ghc2xDTDUu25b8mSQQMo3Pxkf-TfH2vos2-qU
