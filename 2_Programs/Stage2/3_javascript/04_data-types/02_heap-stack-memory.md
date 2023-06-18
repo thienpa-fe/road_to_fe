@@ -25,9 +25,9 @@ Dữ liệu lưu trữ trên bộ nhớ trải qua 3 giai đoạn: Cấp phát -
 
 ## Heap memory (Dynamic Memory)
 
-- Đây là vùng nhớ động và JS Engine trên browser không cấp phát bộ nhớ cố định cho nó
+- Đây là vùng nhớ động và JS Engine trên browser không cấp phát bộ nhớ cố định cho nó.
 - Vùng nhớ này dùng để lưu trữ các dữ liệu phức tạp và dạng tham thiếu như object, function, array.
-- Không giống như stack memory. Việc cấp phát bộ nhớ của heap không biết trước được data size nên sẽ không có giới hạn cụ thể. Cần bao nhiêu cấp bấy nhiêu -> Việc cấp phát bộ nhớ trong stack được gọi là cấp phát bộ nhớ động
+- Không giống như stack memory. Việc cấp phát bộ nhớ của heap không biết trước được data size nên sẽ không có giới hạn cụ thể. Cần bao nhiêu cấp bấy nhiêu -> Việc cấp phát bộ nhớ trong heap được gọi là cấp phát bộ nhớ động.
 - Bộ nhớ được cấp khác trong quá trình chạy (runtime)
 
 ![](../images/stack-heap-pointers.png)
@@ -42,7 +42,7 @@ Dữ liệu lưu trữ trên bộ nhớ trải qua 3 giai đoạn: Cấp phát -
 - Đối với các ngôn ngữ bậc thấp như C++ thì dev tự xoá dữ liệu không dùng tới một cách thủ công bằng code (pointer). Đối với ngôn ngữ bậc cao như Java hay JS thì nó sẽ tự động làm việc này
 - Sử dụng nhiều thuật toán để nhận biết khi nào thì data không được dùng nữa để giải phóng bộ nhớ. Trong đó có:
 
-  - _Reference-counting_: Thuật toán đơn giản nhất. Kiểm tra xem data có còn được reference tới nữa không. Nếu không thì dọn. Thuật toán này đi kèm vấn đề là tham chiếu vòng tròn => Dễ bị bỏ sót, đó là lí do sinh ra thêm thằng ở dưới.
+  - _Reference-counting_: Thuật toán đơn giản nhất. Kiểm tra xem data có còn được reference tới nữa không. Nếu không thì dọn đi.
 
   - _Mark and sweep_: Thuật toán này tân tiến hơn. Hoạt động bằng cách tìm kiếm các object không thể tiếp cận hay truy cập (unreachable) từ global object(root object) - Là window của browser hay global của NodeJS.
 

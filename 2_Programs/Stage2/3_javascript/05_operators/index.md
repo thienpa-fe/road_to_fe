@@ -108,7 +108,8 @@ let result = value1 && value2 && value3;
 > - Return về giá trị truthy cuối cùng
 
 ```js
-const girlFriend = inClass && inSchool && inCompany;
+console.log(1 && false && {}); // ?
+console.log([] && 'true' && 1); // ?
 ```
 
 ### Or (||)
@@ -375,11 +376,3 @@ https://javascript.info/optional-chaining
 ## Tham khảo
 
 - So sánh '==' và '===': https://codeaholicguy.com/2016/06/14/nen-dung-hay-de-so-sanh-trong-javascrip
-
-## Thực hành
-
-- Kết quả câu lệnh dưới đây in ra gì?
-  ```js
-  console.log(1 && false && {}); // ?
-  console.log([] && 'true' && 1); // ?
-  ```

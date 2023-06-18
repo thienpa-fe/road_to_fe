@@ -580,4 +580,4 @@ console.log('cloned car', clonedCar); // {color: 'yellow', body: { slot: 7 }}
 
 - Deep copy và shallow copy của object: https://anonystick.com/blog-developer/phong-van-su-khac-nhau-giua-shallow-copying-va-deep-copying-trong-object-javascript-2019112823755023
 
-- Phương thức Object:
+- Phương thức Object: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods
