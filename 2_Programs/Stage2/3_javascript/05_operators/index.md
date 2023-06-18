@@ -70,26 +70,50 @@ Là các kí hiệu đại điện cho các phép so sánh và tính toán. Rấ
 
 ### And (&&)
 
-- Dùng để kiểm tra nhiều điều kiện kết hợp với nhau và trả về kêt quả cuối cùng.
+https://javascript.info/logical-operators#and
 
-  - Kết quả của toán tử trả về `true` khi tất cả các điều kiện **bắt buộc** đều true.
+Có 2 trường hợp sử dụng:
 
-  - Kết quả toán tử trả về `false` nếu có ít nhất một điều kiện false.
+**Case 1:**
 
-  ```js
-  const weather = 'sunny';
-  const money = 500_000;
+- Dùng trong if statement để kiểm tra nhiều điều kiện kết hợp với nhau và trả về kêt quả cuối cùng.
 
-  if (weather === 'sunny' && money > 0) {
-    // Block code này chỉ chạy khi điều kiện weather === 'sunny' và money > 0 đều trả về true
-    console.log('go to shopping');
-  } else {
-    // Block code này chạy khi một trong 2, hoặc cả 2 điều kiện ở trên trả về false
-    console.log('at home');
-  }
-  ```
+- Kết quả của toán tử trả về `true` khi tất cả các điều kiện **bắt buộc** đều true.
+
+- Kết quả toán tử trả về `false` nếu có ít nhất một điều kiện false.
+
+```js
+const weather = 'sunny';
+const money = 500_000;
+
+if (weather === 'sunny' && money > 0) {
+  // Block code này chỉ chạy khi điều kiện weather === 'sunny' và money > 0 đều trả về true
+  console.log('go to shopping');
+} else {
+  // Block code này chạy khi một trong 2, hoặc cả 2 điều kiện ở trên trả về false
+  console.log('at home');
+}
+```
+
+**Case 2:**
+
+- Dùng trong việc xử lý các điều kiện để lấy giá trị trả về và gán cho một biến nào đó
+
+```js
+let result = value1 && value2 && value3;
+```
+
+> - Biểu thức sẽ được đánh giá từ trái sang phải
+> - Return về giá trị falsy đầu tiên được tìm thấy
+> - Return về giá trị truthy cuối cùng
+
+```js
+const girlFriend = inClass && inSchool && inCompany;
+```
 
 ### Or (||)
+
+https://javascript.info/logical-operators#or
 
 - Giống như toán tử AND (&&). Dùng để kết hợp nhiều điều kiện với nhau và trả về kết quả cuối cùng.
 - Điểm khác biệt là chỉ cần một điều kiện `true` thì kết quả cuối cùng vẫn sẽ trả về true.
@@ -107,6 +131,8 @@ Là các kí hiệu đại điện cho các phép so sánh và tính toán. Rấ
   ```
 
 ### Negative (!)
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT
 
 - Toán tử phủ định. Sẽ convert một giá trị về kiểu boolean và đảo ngược lại giá trị của nó sau khi chuyển đổi.
 
@@ -141,6 +167,8 @@ Boolean(myNum); // false
 ```
 
 ### Nullish coalescing (??)
+
+https://javascript.info/nullish-coalescing-operator
 
 - Dùng để kiểm tra xem một biến có giá trị hay null/undefined
 
@@ -206,6 +234,16 @@ https://javascript.info/optional-chaining
 
   // Using optinal chaining operator
   console.log(cat?.foot?.toe);
+  ```
+
+#### Trường hợp sử dụng khác
+
+- Optional chaining không chỉ sử dụng được với object mà còn sử dụng được cho mảng, hàm.
+
+  ```
+  obj?.prop,
+  arr?.[index],
+  func?.()
   ```
 
 #### Warning
@@ -337,3 +375,11 @@ https://javascript.info/optional-chaining
 ## Tham khảo
 
 - So sánh '==' và '===': https://codeaholicguy.com/2016/06/14/nen-dung-hay-de-so-sanh-trong-javascrip
+
+## Thực hành
+
+- Kết quả câu lệnh dưới đây in ra gì?
+  ```js
+  console.log(1 && false && {}); // ?
+  console.log([] && 'true' && 1); // ?
+  ```

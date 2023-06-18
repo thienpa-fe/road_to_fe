@@ -96,6 +96,23 @@ const developer = {
   }
   ```
 
+- Khai báo method cho object theo 2 cách:
+  ```js
+  const developer = {
+    coding: function () {
+      console.log('I am coding!');
+    },
+  };
+  ```
+  Tương đương với
+  ```js
+  const developer = {
+    coding() {
+      console.log('I am coding!');
+    },
+  };
+  ```
+
 ## Access properties
 
 - JS hỗ trợ 3 cách để truy cập được vào thuộc tính của object:
