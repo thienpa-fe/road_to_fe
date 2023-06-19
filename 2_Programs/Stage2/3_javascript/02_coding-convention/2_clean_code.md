@@ -436,3 +436,7 @@ const gender = FEMALE;
 ```
 
 > Developer giỏi không chỉ là developer viết code cho máy tính hiểu. Developer giỏi là developer viết code cho developer khác hiểu.
+
+## Tham khảo
+
+- https://www.syncfusion.com/blogs/post/10-javascript-naming-conventions-every-developer-should-know.aspx

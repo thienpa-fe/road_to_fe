@@ -106,7 +106,7 @@ let counter = 100;
     ```js
     Math.abs(); // NaN
     Math.abs(5); // 5
-    Math.abs(-5); // -5
+    Math.abs(-5); // 5
     ```
 
 ## Infinity
