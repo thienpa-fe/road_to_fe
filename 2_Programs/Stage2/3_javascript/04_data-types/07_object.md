@@ -200,6 +200,7 @@ const developer = {
 ## Global object
 
 - Là một object top-level trong global scope. Đối với trình duyệt thì nó là object `window`, đối với môi trường thực thi thì nó là object `global`
+- Global object cung cấp các properties và methods có thể truy cập và sử dụng được ở bất cứ đâu
 - Đặc điểm
 
   - Các global object này sẽ ngầm định cung cấp các function built-in mà không cần phải gọi nó ra
