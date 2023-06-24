@@ -82,7 +82,7 @@ let counter = 100;
   - Math.pow(): Luỹ thừa một số
 
     ```js
-    Math.pow(2, 3); // 2^3 = 16;
+    Math.pow(2, 3); // 2^3 = 8;
     ```
 
   - Math.min(): Nhận vào một mảng và trả về phần tử có giá trị nhỏ nhất
@@ -143,7 +143,14 @@ let counter = 100;
   const isEvenAge = myAge % 2;
 ```
 
-> - `/`: Chia lấy phần nguyên
+Phép chia:
+
+```js
+const div = 8 / 5; // 1.6
+const mod = 8 % 5; // 3
+```
+
+> - `/`: Phép chia bình thường
 > - `%`: Chia lấy phần dư
 
 ```js
