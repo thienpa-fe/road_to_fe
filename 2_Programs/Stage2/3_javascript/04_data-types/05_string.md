@@ -7,7 +7,7 @@
 - String có thể được khai báo theo các cách sau:
   ```js
   const myName1 = 'Wanda Maximoff';
-  const myName2 = 'Wanda Maximoff';
+  const myName2 = "Wanda Maximoff";
   const myName3 = `Wanda Maximoff`;
   const myName4 = "I am 'good'. She said";
   ```
@@ -59,13 +59,11 @@ console.log(weather[weather.length - 1]); // 'n'
   - Thao tác với string: Khi gọi các hàm thao tác với string như split, concat, slice,... thì những hàm này sẽ không thay đổi biến string gốc mà sao chép một biến string khác, xử lý nó và trả về
 
     ```js
-    const arr1 = [1, 2, 3];
-    const arr2 = [4, 5, 6];
+    const myStr = 'Hello';
 
-    const arrFinal = arr1.concat[arr2];
+    myStr.split(''); // ['H', 'e', 'l', 'l', 'o']
 
-    console.log(arrFinal); // [1, 2, 3, 4, 5, 6]
-    console.log(arr1); // [1, 2, 3]
+    console.log(myStr); // 'Hello'
     ```
 
   - Gán giá trị:
@@ -96,8 +94,6 @@ console.log(weather[weather.length - 1]); // 'n'
     ![](../images/primitive-object-string.png)
 
 ## Methods / properties tương tác với string
-
-length
 
 ![](../images/string-methods.jpeg)
 
