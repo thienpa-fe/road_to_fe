@@ -197,7 +197,7 @@ Sử dụng khi biết trước được số vòng lặp và điều kiện.
 
 #### for...of
 
-- Lặp qua các value của **Iterable Object** như string, array, map, set
+- Lặp qua các value của [**Iterable Object**](https://javascript.info/iterable) như string, array, map, set
 
   ```js
   const array1 = ['a', 'b', 'c'];
