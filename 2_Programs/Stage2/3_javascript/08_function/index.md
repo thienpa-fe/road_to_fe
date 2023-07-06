@@ -272,6 +272,9 @@ doSomething(getTodoList);
     getStudentFromServer(showStudent);
     ```
 
+- Callback giải quyết tốt các vấn đề về bất đồng bộ, nhưng đối với những tác vụ cần nhiều step mà vẫn phải sử dụng callback, việc sử dụng quá nhiều hàm callback lồng nhau sẽ tạo ra `callback hell`. Sau này để khắc phục người ta sinh ra Promise và async await.
+  ![](../images/callback-hell.png)
+
 ## Execution Context
 
 - Execution context: Mỗi một function hay method khi được gọi sẽ tạo ra một execution context và this trong những trường hợp này sẽ khác nhau.
