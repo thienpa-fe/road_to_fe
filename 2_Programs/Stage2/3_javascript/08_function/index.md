@@ -150,11 +150,6 @@
   console.log(student);
   ```
 
-## Function declaration & Function Expression
-
-- Function declaration
-- Function expression
-
 ## IIFE function [(link)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
 - IFFE: Immediately Invoked Function Expression - Hàm gọi ngay lập tức.
@@ -294,4 +289,4 @@ Ví dụ 2:
 3. Viết một hàm dùng để lọc ra các phần tử chẵn của một mảng
 4. Viết một hàm trả về giá trị nhỏ thứ 2 trong một mảng
 5. Viết một hàm tạo ra mã số nhân viên có tiền tố "PLE-XXXXXX" trong đó XXXXXX được sinh ra ngẫu nhiên
-6. Tìm hiểu khái niệm higher order function và first class function
+6. Tìm hiểu và thuyết trình + code demo khái niệm higher order function và first class function
