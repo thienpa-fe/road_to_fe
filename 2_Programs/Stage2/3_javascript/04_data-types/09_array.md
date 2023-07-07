@@ -21,50 +21,61 @@
 
 ## Phân loại
 
-![](../images/multidimensional-array.webp)
-
 - Mảng một chiều (1-D array)
+
+  ![](../images/1-dimension-array.webp)
+
 - Mảng nhiều chiều (từ 2-D array trở lên)
 
-  Ví dụ mảng 2 chiều:
+  ![](../images/2d-array.webp)
 
-  ```js
-  const grid = [
+  ![](../images/3-d-array.webp)
+
+Ví dụ mảng 1 chiều:
+
+```js
+const arr = [1, 2, 3];
+```
+
+Ví dụ mảng 2 chiều:
+
+```js
+const grid = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+const element = grid[1][2];
+
+console.log(element);
+```
+
+Ví dụ mảng 3 chiều:
+
+```js
+const grid = [
+  [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
-  ];
+  ],
+  [
+    [10, 11, 12],
+    [13, 14, 15],
+    [16, 17, 18],
+  ],
+  [
+    [19, 20, 21],
+    [22, 23, 24],
+    [25, 26, 27],
+  ],
+];
 
-  const element = grid[1][2];
+const element = grid[2][1][2];
 
-  console.log(element);
-  ```
-
-  Ví dụ mảng 3 chiều:
-
-  ```js
-  const grid = [
-    [
-      [1, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9],
-    ],
-    [
-      [10, 11, 12],
-      [13, 14, 15],
-      [16, 17, 18],
-    ],
-    [
-      [19, 20, 21],
-      [22, 23, 24],
-      [25, 26, 27],
-    ],
-  ];
-
-  const element = grid[2][1][2];
-
-  console.log(element);
-  ```
+console.log(element);
+```
 
 ## Kiểm tra array
 
@@ -106,8 +117,8 @@ typeof []; // "object"
   const myArr = [1, true, 'hello'];
 
   const length = myArr.length; // 3;
-  const lastElement = myArr[length - 1];
-  const randomValue = array[1];
+  const lastElement = myArr[length - 1]; // 'hello'
+  const randomValue = myArr[1]; // true
   ```
 
 - Sử dụng hàm `at()`:
