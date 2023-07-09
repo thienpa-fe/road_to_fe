@@ -192,7 +192,9 @@
   (function () {
     // …
   })();
+  ```
 
+  ```js
   (() => {
     // …
   })();
@@ -263,7 +265,7 @@
   console.log(age); // ReferenceError: age is not defined
   ```
 
-- IIFE gần như không thể tái sử dụng lại nên hầu hết các trường hợp nó là anonymous function mà không cần đặt tên (trừ trường hợp muốn sử dụng đệ quy hay đặt tên chỉ để biến công dụng của hàm).
+- IIFE gần như không thể tái sử dụng lại nên hầu hết các trường hợp nó là anonymous function mà không cần đặt tên (trừ trường hợp muốn sử dụng đệ quy hay đặt tên chỉ để biết công dụng của hàm).
 
 - Dùng để viết thư viện. Vì khi nhúng thư viện (như carousel, slide show) vào src project của mình thì thư viện vẫn chạy tốt và không conflict với code có sẵn của mình vì nó tách bạch hẳn ra giữa src thư viện và src của project.
 
