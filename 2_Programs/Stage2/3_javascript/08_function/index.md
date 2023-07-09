@@ -108,7 +108,7 @@
 
 |          | Function declaration                                    | Function expression                                                                                                                                  |
 | -------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Syntax   | Sử dụng keyword `function` và đặ tên khai báo độc lập.  | Gán function vào biến, function không có tên.                                                                                                        |
+| Syntax   | Sử dụng keyword `function` và đặt tên khai báo độc lập.  | Gán function vào biến, function không có tên.                                                                                                        |
 | Hoisting | Gọi hàm trước rồi khai báo sau                          | Function chỉ được tạo khi chương trình thực thi đến đoạn code khai báo và chỉ sử dụng trong một thơi điểm nhất định. Phải khai báo rồi mới dùng được |
 | Use case | Dùng khi muốn định nghĩa một hàm và gọi mọi lúc mọi nơi | Vì được gán vào biến nên function sử dụng khi muốn định nghĩa trong một scope nào đó giúp global scope sạch hơn                                      |
 | Name     | Được đặt tên theo naming convention                     | Function không có tên, chỉ được gọi nhờ vào biến mà function được gán                                                                                |
@@ -192,7 +192,9 @@
   (function () {
     // …
   })();
+  ```
 
+  ```js
   (() => {
     // …
   })();
@@ -263,7 +265,7 @@
   console.log(age); // ReferenceError: age is not defined
   ```
 
-- IIFE gần như không thể tái sử dụng lại nên hầu hết các trường hợp nó là anonymous function mà không cần đặt tên (trừ trường hợp muốn sử dụng đệ quy hay đặt tên chỉ để biến công dụng của hàm).
+- IIFE gần như không thể tái sử dụng lại nên hầu hết các trường hợp nó là anonymous function mà không cần đặt tên (trừ trường hợp muốn sử dụng đệ quy hay đặt tên chỉ để biết công dụng của hàm).
 
 - Dùng để viết thư viện. Vì khi nhúng thư viện (như carousel, slide show) vào src project của mình thì thư viện vẫn chạy tốt và không conflict với code có sẵn của mình vì nó tách bạch hẳn ra giữa src thư viện và src của project.
 
