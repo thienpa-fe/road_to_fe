@@ -4,22 +4,26 @@
 
 ## Định nghĩa
 
-- Sự kiện là những hành động tác động lên bất cứ thành phần nào của trang web (component, DOM, data, ...). Từ đó trang web sẽ lắng nghe có những phản hồi ngược lại tương ứng.
+- Sự kiện là những hành động tác động lên bất cứ thành phần nào của trang web một cách chủ động (component, DOM, data, ...) hay bị động (load data, render UI, lưu storage...). Từ đó trang web sẽ lắng nghe và có những phản hồi ngược lại tương ứng.
 
-  => Điều này khiến trang web trở nên "sống động" hơn và làm cho user đang thực sự giao tiếp với trang web chứ không chỉ đơn thuần chỉ là web để đọc thông tin.
+  => Điều này khiến ứng dụng web trở nên "sống động" hơn và làm cho user đang thực sự giao tiếp với trang web chứ không chỉ đơn thuần chỉ là web để đọc thông tin.
 
 - Các sự kiện built-in trên web bao gồm sự kiện phím, chuột, state của các web element...
 - Vd:
 
   - user click vào button Login => Hệ thống sẽ gửi request xác thực account.
+
   - Page loading xong dữ liệu.
+
   - Use hover chuột vào một card.
+
   - User nhấn một nút bất kì trên bàn phím.
+
   - v.v...
 
 ## Event handlers
 
-- Các event handlers đã được built-in sẵn trong element theo dạng properties. Thường có tiền tố "on" trước tên các sự kiện:
+- Các event handlers đã được built-in sẵn trong element theo dạng properties có giá trị mặc định là null. Thường có tiền tố "on" trước tên các sự kiện:
 
   ![](../images/event-handlers.png)
 
