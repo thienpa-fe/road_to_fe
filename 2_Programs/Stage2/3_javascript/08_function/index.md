@@ -46,6 +46,8 @@
 
 ### Tham số (parameter) và đối số (argument)
 
+![](../images/argument-param.png)
+
 - Tham số: Là một biến được định nghĩa khi khai báo hàm, như là một chỗ trống sẵn để dành cho input truyền vào khi gọi hàm.
 - Đối số: Là biến được truyền vào trực tiếp cho hàm để hàm có thể dựa vào đó và xử lý.
 
@@ -59,16 +61,17 @@
   sayHello(name); // name is argument
   ```
 
-- Một hàm chỉ nên có tối đa 3 tham số
+- Một hàm chỉ nên có tối đa 3 tham số.
 
-- Tưởng tượng như một cái box. Ta có thể truyền tham số đầu vào (input) để hàm có thể xử lý dựa trên tham số đó và trả ra kết quả ta mong muốn (output).
+- Tưởng tượng hàm như một cái box. Ta có thể truyền tham số đầu vào (input) để hàm có thể xử lý dựa trên tham số đó và trả ra kết quả ta mong muốn (output).
+
 - Giá trị trả ra (output) của hàm này có thể là input của hàm khác.
 
 ![](../images/composite-function.png)
 
 ### Function declaration
 
-- Sử dụng keyword `function` để định nghĩa.
+- Sử dụng keyword `function` và tên của function để định nghĩa.
 
   ```js
   function nameOfFunction() {
@@ -79,7 +82,8 @@
 ### Function expression
 
 - Khai báo biến và gán một function cho biến đó.
-- Function này được gọi là anonymous function. Chỉ gọi được thông qua biến mà nó được gán vào.
+
+- Function này được gọi là anonymous function. Không cần đặt tên, chỉ cần gọi thông qua biến mà nó được gán vào.
 
   ```js
   const nameOfFunction = function () {
@@ -97,11 +101,14 @@
   };
   ```
 
+  - Syntax `() => {}` thay thế cho `function() {}`
+  - Tìm hiểu kĩ hơn ở bài Arrow Function.
+
 ### So sánh function declaration và function expression
 
 |          | Function declaration                                    | Function expression                                                                                                                                  |
 | -------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Syntax   | Sử dụng keyword `function` khai báo độc lập             | Gán function vào biến                                                                                                                                |
+| Syntax   | Sử dụng keyword `function` và đặt tên khai báo độc lập.  | Gán function vào biến, function không có tên.                                                                                                        |
 | Hoisting | Gọi hàm trước rồi khai báo sau                          | Function chỉ được tạo khi chương trình thực thi đến đoạn code khai báo và chỉ sử dụng trong một thơi điểm nhất định. Phải khai báo rồi mới dùng được |
 | Use case | Dùng khi muốn định nghĩa một hàm và gọi mọi lúc mọi nơi | Vì được gán vào biến nên function sử dụng khi muốn định nghĩa trong một scope nào đó giúp global scope sạch hơn                                      |
 | Name     | Được đặt tên theo naming convention                     | Function không có tên, chỉ được gọi nhờ vào biến mà function được gán                                                                                |
@@ -109,18 +116,45 @@
 ## Return value
 
 - Vì sao một hàm luôn return ra một giá trị nào đó ?
-  - Cần một giá trị để đó thể tiếp tục tính toán -> Vì chương trình là một hệ thống các function hoạt động cùng nhau (hàm này phải biết dữ liệu trả ra của hàm khác để mà xử lý tiếp)
+
+  - Cần một giá trị để thể tiếp tục tính toán -> Vì chương trình là một hệ thống các function hoạt động cùng nhau (hàm này phải biết dữ liệu trả ra của hàm khác để xử lý tiếp).
+
+  - Sử dụng keyword `return` để trả về giá trị của một hàm.
+
+  - Khi không định nghĩa giá trị return thì mặc định hàm sẽ return ra undefined
+
+  ```js
+  function returnNothing() {
+    console.log('return nothing!');
+  }
+
+  console.log(returnNothing()); // undefined
+  ```
+
+  ```js
+  function returnSomething() {
+    console.log('return something...');
+    return {
+      product: 'iPhone 12',
+      price: '200$',
+      brand: 'Apple',
+    };
+  }
+
+  console.log(returnSomething());
+  ```
 
 ## Pass by value & pass by reference
 
 ![](../images/pass-by-value-reference.gif)
 
-- Trong JS, tuỳ vào kiểu dữ liệu là primitive hay reference mà cách lưu giá trị xuống bộ nhớ sẽ khác nhau
-- Truyền tham số hàm cũng vậy, tuỳ vào kiểu dữ liệu của tham số mà hàm cũng sẽ có cách xử lý các giá trị input đó khác nhau
+- Trong JS, tuỳ vào kiểu dữ liệu là primitive hay reference mà cách lưu giá trị xuống bộ nhớ sẽ khác nhau.
+
+- Truyền tham số hàm cũng vậy, tuỳ vào kiểu dữ liệu của tham số mà hàm cũng sẽ có cách xử lý các giá trị input đó khác nhau.
 
 ### Pass by value
 
-- Khi tham số có kiểu dữ liệu primitive. Thì giá trị của tham số sẽ được copy ra. Lúc này tham số truyền vào hàm và tham số tồn tại trong hàm là 2 giá trị khác nhau. Nên việc thay đổi sẽ không gây ảnh hưởng đến nhau.
+- Khi tham số có kiểu dữ liệu **primitive** thì giá trị của tham số sẽ được copy ra. Lúc này tham số truyền vào hàm và tham số tồn tại trong hàm là 2 giá trị khác nhau. Nên việc thay đổi sẽ không gây ảnh hưởng đến nhau.
 
   ```js
   let age = 28;
@@ -135,7 +169,7 @@
 
 ### Pass by reference
 
-- Khi tham số có kiểu dữ liệu reference. Thì lúc này thứ được truyền vào hàm chính là tham chiếu địa chỉ của tham số đó. Nên nếu trong hàm có bất cứ thay đổi nào thì sẽ ảnh hưởng đến cả 2, gây ra side effect bên ngoài hàm.
+- Khi tham số có kiểu dữ liệu **reference** thì lúc này thứ được truyền vào hàm chính là tham chiếu địa chỉ của tham số đó. Nên nếu trong hàm có bất cứ thay đổi nào thì sẽ ảnh hưởng đến cả 2, gây ra side effect bên ngoài hàm.
 
   ```js
   let student = {
@@ -152,51 +186,136 @@
 
 ## IIFE function [(link)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
-- IFFE: Immediately Invoked Function Expression - Hàm gọi ngay lập tức.
-- Đặc điểm:
+- IFFE: Immediately Invoked Function Expression - Hàm được gọi ngay lập tức
 
-  - Phần khai báo hàm sẽ được thực thi ngay lập tức mà không cần call.
+  ```js
+  (function () {
+    // …
+  })();
+  ```
 
-  - Hàm chỉ chạy một lần sau đó sẽ giải phóng khỏi bộ nhớ.
+  ```js
+  (() => {
+    // …
+  })();
+  ```
 
-    ```js
-    (function () {
-      // …
-    })();
+### Đặc điểm:
 
-    (() => {
-      // …
-    })();
-    ```
+- Phần khai báo hàm sẽ được invoke ngay lập tức.
 
-  - Hàm IIFE có truyền tham số
+- Có thể đặt tên cho hàm IIFE hoặc không (optional).
 
-    ```js
-    (function (num1, num2) {
-      console.log(num1 + num2);
-    })(1, 2);
-    ```
+- Hàm IIFE có truyền tham số:
 
-  - Trường hợp sử dụng
+  ```js
+  (function (num1, num2) {
+    console.log(num1 + num2);
+  })(1, 2);
+  ```
 
-    - Sử dụng để init nhanh một giá trị nào đó và đóng gói các variable trong một scope kín không thể truy cập
+- Private scope:
 
-      ```js
-      (() => {
-        var age = 30;
-        console.log(age); // 30
-      })();
+  ```js
+  const studentHandler = (function () {
+    let student = {
+      age: 28,
+      address: 'Danang',
+    };
+    return {
+      add(prop, value) {
+        student[prop] = value;
+      },
+      get() {
+        return student;
+      },
+      delete(prop) {
+        if (student[prop]) {
+          delete student[prop];
+        }
+      },
+    };
+  })();
 
-      console.log(age); // ReferenceError: age is not defined
-      ```
+  console.log(studentHandler.get());
+  studentHandler.add('name', 'ple');
+  console.log(studentHandler.get());
+  studentHandler.delete('name');
+  console.log(studentHandler.get());
+  ```
 
-    - Function không cần tái sử dụng lại
-    - Dùng để viết thư viện. Vì khi nhúng thư viện (như carousel, slide show) vào src project của mình thì thư viện vẫn chạy tốt và không conflict với code có sẵn của mình vì nó tách bạch hẳn ra giữa src thư viện và src của project
+  ```js
+  (function sayHello() {
+    console.log('Hello!');
+  })(); // 'Hello!'
+
+  sayHello(); // ReferenceError: sayHello is not defined
+  ```
+
+### Trường hợp sử dụng
+
+- Sử dụng để init nhanh một giá trị nào đó và đóng gói các variable trong một scope kín không thể truy cập
+
+  ```js
+  (() => {
+    var age = 30;
+    console.log(age); // 30
+  })();
+
+  console.log(age); // ReferenceError: age is not defined
+  ```
+
+- IIFE gần như không thể tái sử dụng lại nên hầu hết các trường hợp nó là anonymous function mà không cần đặt tên (trừ trường hợp muốn sử dụng đệ quy hay đặt tên chỉ để biết công dụng của hàm).
+
+- Dùng để viết thư viện. Vì khi nhúng thư viện (như carousel, slide show) vào src project của mình thì thư viện vẫn chạy tốt và không conflict với code có sẵn của mình vì nó tách bạch hẳn ra giữa src thư viện và src của project.
+
+- Tránh việc làm nhiễu global scope khi khai báo và sử dụng nhiều biến global. Thứ sẽ luôn tồn tại trong suốt quá trình hoạt động của hệ thống ứng dụng.
+
+  ![](../images/iife-global.png)
+
+### Đặt dấu `;` phía trước hàm IIFE khi sử dụng:
+
+- Liên quan đến cú pháp của IIFE. Đề phòng trường hợp các statement phía trên nó không có dấu `;` để ngăn cách statement
+
+  ```js
+  let name = 'bee'(function (name) {
+    console.log(name);
+  })(name);
+  ```
+
+  > TypeError: "bee" is not a function
+
+- Ở đây JS compiler sẽ hiểu là đang cố gắng gọi một thứ không phải là hàm (biến name) nên sẽ gây ra lỗi. Tuỳ theo style coding để đặt dấu `;` tách riêng các statment.
+
+  ```js
+  let name = 'bee';
+
+  (function (name) {
+    console.log(name);
+  })(name);
+  ```
+
+  ```js
+  let name = 'bee'
+
+  ;(function (name) {
+    console.log(name);
+  })(name);
+  ```
+
+### Khác nhau giữa "call function" và "invoke function"
+
+- Call function: Cần một block code khai báo hàm và cần có một statement cho việc gọi hàm.
+
+- Invoke function: Hàm tự động được gọi ngay sau khi block code khai báo hàm được thực thi.
 
 ## Callback function (Hàm gọi lại)
 
-- Một hàm được truyền vào dưới dạng tham số của một hàm khác và được gọi lại trong context của hàm khác thì đó là hàm callback
-- Callback có thể áp dụng để viết code đồng bộ (sync) và bất đồng bộ (async)
+### Định nghĩa
+
+- Một hàm được truyền vào dưới dạng tham số của một hàm khác và được gọi lại trong context của hàm khác thì đó là **hàm callback**.
+
+- Callback có thể áp dụng để viết code đồng bộ (sync) và bất đồng bộ (async).
 
 ```js
 function getTodoList() {
@@ -215,27 +334,29 @@ doSomething(getTodoList);
 
   - Ví dụ: Viết một chương trình dùng để tính tổng 2 số và in ra kết quả
 
-    ```js
-    function sum(num1, num2, callback) {
-      return num1 + num2;
-    }
+  Không dùng callback:
 
-    console.log(sum(1, 2));
-    ```
+  ```js
+  function sum(num1, num2, callback) {
+    return num1 + num2;
+  }
 
-    Sử dụng callback:
+  console.log(sum(1, 2));
+  ```
 
-    ```js
-    function showData(result) {
-      console.log(result);
-    }
+  Sử dụng callback:
 
-    function sumAndMore(num1, num2, callback) {
-      callback(num1 + num2);
-    }
+  ```js
+  function showData(result) {
+    console.log(result);
+  }
 
-    sumAndMore(1, 2, showData);
-    ```
+  function sumAndMore(num1, num2, callback) {
+    callback(num1 + num2);
+  }
+
+  sumAndMore(1, 2, showData);
+  ```
 
 - Callback in async
 
@@ -267,12 +388,22 @@ doSomething(getTodoList);
     getStudentFromServer(showStudent);
     ```
 
-- Callback giải quyết tốt các vấn đề về bất đồng bộ, nhưng đối với những tác vụ cần nhiều step mà vẫn phải sử dụng callback, việc sử dụng quá nhiều hàm callback lồng nhau sẽ tạo ra `callback hell`. Sau này để khắc phục người ta sinh ra Promise và async await.
-  ![](../images/callback-hell.png)
+### Trường hợp sử dụng
+
+- Xử lý tác vụ bất đồng bộ: Đối với những tác vụ cần tốn thời gian để hoàn thành, sau khoản thời gian đó ta sẽ cần callback để thực thi các action tiếp theo.
+
+- Đóng vai trò là event listener : Đối với các sự kiện như click chuột, nhấn nút, thì callback có tác dụng lắng nghe và thực thi logic ngay khi sự kiện kích hoạt để phản hồi lại.
+
+### Callback hell / Pyramid of dom
+
+Đối với những tác vụ (đa số là bất đồng bộ) cần nhiều step mà vẫn phải sử dụng nhiều callback lồng nhau sẽ tạo ra `callback hell`.
+
+Sau này để khắc phục người ta tạo ra Promise và async await.
+![](../images/callback-hell.png)
 
 ## Execution Context
 
-- Execution context: Mỗi một function hay method khi được gọi sẽ tạo ra một execution context và this trong những trường hợp này sẽ khác nhau.
+Mỗi một function hay method khi được gọi sẽ tạo ra một execution context và this trong những trường hợp này sẽ khác nhau.
 
 Ví dụ 1:
 
@@ -281,6 +412,10 @@ Ví dụ 1:
 Ví dụ 2:
 
 ![](../images/execution-context.webp)
+
+Ví dụ 3:
+
+![](../images/function-execution-context.png)
 
 ## Thực hành
 
