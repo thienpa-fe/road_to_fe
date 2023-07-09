@@ -296,9 +296,9 @@
   ```
 
   ```js
-  let name = 'bee';
+  let name = 'bee'
 
-  (function (name) {
+  ;(function (name) {
     console.log(name);
   })(name);
   ```
