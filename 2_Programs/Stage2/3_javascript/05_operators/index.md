@@ -16,7 +16,7 @@ Là các kí hiệu đại điện cho các phép so sánh và tính toán. Rấ
   - `-`: Trừ
     ```js
     const total = 10;
-    total++;
+    total--;
     ```
   - `*`: Nhân
   - `**`: Luỹ thừa
@@ -227,9 +227,7 @@ https://javascript.info/optional-chaining
   // Using if statement
   if (cat.foot) {
     if (cat.foot.toe) {
-      if (cat.foot.toe) {
-        console.log(cat.foot.toe);
-      }
+      console.log(cat.foot.toe);
     }
   }
 
