@@ -20,14 +20,14 @@ Là các kí hiệu đại điện cho các phép so sánh và tính toán. Rấ
     ```
   - `*`: Nhân
   - `**`: Luỹ thừa
-  - `/`: Chia lấy phần nguyên
+  - `/`: Phép chia bình thường
 
     ```js
     const result = 8 / 4; // 2;
     const result2 = 9 / 4; // 2.25;
     ```
 
-  - `%`: Chia lấy phần dư
+  - `%`: Phép chia lấy phần dư
 
     ```js
     const result = 8 % 4; // 0;
