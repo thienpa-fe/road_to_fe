@@ -16,18 +16,18 @@ Là các kí hiệu đại điện cho các phép so sánh và tính toán. Rấ
   - `-`: Trừ
     ```js
     const total = 10;
-    total++;
+    total--;
     ```
   - `*`: Nhân
   - `**`: Luỹ thừa
-  - `/`: Chia lấy phần nguyên
+  - `/`: Phép chia bình thường
 
     ```js
     const result = 8 / 4; // 2;
     const result2 = 9 / 4; // 2.25;
     ```
 
-  - `%`: Chia lấy phần dư
+  - `%`: Phép chia lấy phần dư
 
     ```js
     const result = 8 % 4; // 0;
@@ -227,9 +227,7 @@ https://javascript.info/optional-chaining
   // Using if statement
   if (cat.foot) {
     if (cat.foot.toe) {
-      if (cat.foot.toe) {
-        console.log(cat.foot.toe);
-      }
+      console.log(cat.foot.toe);
     }
   }
 
