@@ -83,6 +83,8 @@ Sử dụng khi biết trước được số vòng lặp và điều kiện.
 
 - For i với biến i define ở ngoài: Có thể truy cập và sử dụng được biến i sau khi vòng for kết thúc
 
+  > Biến đếm i hay được sử dụng để vì nó là viết tắt của iterable / index
+
   ```js
   let i = 0;
 
