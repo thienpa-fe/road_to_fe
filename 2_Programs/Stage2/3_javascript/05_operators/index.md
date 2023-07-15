@@ -99,25 +99,30 @@ if (weather === 'sunny' && money > 0) {
 
 - Dùng trong việc xử lý các điều kiện để lấy giá trị trả về và gán cho một biến nào đó
 
-```js
-let result = value1 && value2 && value3;
-```
+  ```js
+  let result = value1 && value2 && value3;
+  ```
 
-> - Biểu thức sẽ được đánh giá từ trái sang phải
-> - Return về giá trị falsy đầu tiên được tìm thấy
-> - Return về giá trị truthy cuối cùng
+  > - Biểu thức sẽ được đánh giá từ trái sang phải
+  > - Return về giá trị falsy đầu tiên được tìm thấy
+  > - Return về giá trị truthy cuối cùng
 
-```js
-console.log(1 && false && {}); // ?
-console.log([] && 'true' && 1); // ?
-```
+  ```js
+  console.log(1 && false && {}); // ?
+  console.log([] && 'true' && 1); // ?
+  ```
 
-### Or (||)
+### OR (||)
 
 https://javascript.info/logical-operators#or
 
 - Giống như toán tử AND (&&). Dùng để kết hợp nhiều điều kiện với nhau và trả về kết quả cuối cùng.
+
 - Điểm khác biệt là chỉ cần một điều kiện `true` thì kết quả cuối cùng vẫn sẽ trả về true.
+
+- Có 2 trường hợp sử dụng giống như AND:
+
+  **Case 1:**
 
   ```js
   const domain = 'frontend';
@@ -131,7 +136,24 @@ https://javascript.info/logical-operators#or
   }
   ```
 
-### Negative (!)
+  **Case 2:**
+
+  - Dùng trong việc đánh giá một biến có là giá trị falsy hay không
+
+    ```js
+    let result = value1 || value2 || value3;
+    ```
+
+    > - Biểu thức sẽ được đánh giá từ trái sang phải
+    > - Return về giá trị falsy cuối cùng được tìm thấy
+    > - Return về giá trị truthy đầu tiên
+
+    ```js
+    console.log('' || false || 0); // ?
+    console.log([] || true || 1); // ?
+    ```
+
+### Negative / NOT operator (!)
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT
 
@@ -151,7 +173,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logi
   }
   ```
 
-### Not-not operator (!!)
+### NOT-NOT operator (!!)
 
 - Dùng để convert một giá trị bất kì thành kiểu boolean tương ứng. Tương tự như việc gọi một Primitive Wrapper Object Boolean bọc bên ngoài biến.
 - Công dụng giống như negative operator nhưng nó sẽ không đảo ngược lại giá trị.
@@ -370,6 +392,42 @@ https://javascript.info/optional-chaining
 
   console.log(void (10 + 10)); // undefined
   ```
+
+## So sánh các toán tử
+
+- Một số điều kiện đặc biệt cần so sánh vai trò của các loại toán tử khi sử dụng
+
+### && và ?? và ||
+
+- Khi sử dụng cùng với biến:
+
+  - &&: Return truthy cuối cùng, falsy đầu tiên
+
+  - ||: Return truthy đầu tiên, falsy cuối cùng
+
+- Khi sử dụng trong if statement:
+
+  - &&: Ràng buộc các điều kiện đều phải true thì if statement return true, chỉ cần có ít nhất một hoặc tất cả các điều kiện false thì if statement return false.
+
+  - ||: Các điều kiện sẽ không ràng buộc với nhau và trở thành các options. Chỉ cần ít nhất một điều kiện true thì if statement return true, khi toàn bộ các điều kiện đều false thì if statement return false.
+
+- Ngoài ra:
+
+  - ||: Dùng để return về giá trị truthy
+
+  - ??: Dùng để return về giá trị không phải null/undefined
+
+- Các operator `||` `&&` `??` không thể sử dụng đồng thời với nhau. Cần chỉ ra độ ưu tiên của các phép so sánh.
+
+  ```js
+  let x = 1 && 2 ?? 3; // Syntax error
+  ```
+
+  ```js
+  let x = (1 && 2) ?? 3; // Works
+  ```
+
+###
 
 ## Tham khảo
 
