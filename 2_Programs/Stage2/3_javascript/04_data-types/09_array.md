@@ -181,7 +181,7 @@ Là những phần tử bất thường xuất hiện trong mảng có thể gâ
   const arr = [1, 2, 3];
   arr.length = 10;
 
-  console.log(arr); // (10) [empty × 10]
+  console.log(arr); // (10) [ 1, 2, 3, <7 empty items> ]
   console.log(arr.length); // 10;
   console.log(arr[3]); // undefined
   ```

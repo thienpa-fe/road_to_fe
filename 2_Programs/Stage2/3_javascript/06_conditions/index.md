@@ -171,7 +171,7 @@ IF weather = 'RAIN' goSleep ELSE goOut
 
     - Giá trị falsy: false, '', null, undefined, NaN, 0
 
-    - Giá trị truthy: true, number > 0, string
+    - Giá trị truthy: true, number > 0, string not empty, {}, [], ...
 
     ```js
     const isTruthyValue = true;
