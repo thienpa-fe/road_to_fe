@@ -1,1 +1,1 @@
-# var - let - const
+# Scope | var - let - const | Closure

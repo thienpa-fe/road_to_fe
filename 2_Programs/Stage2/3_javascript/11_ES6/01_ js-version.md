@@ -1,7 +1,8 @@
 # JavaScript Version
 
 - Ngôn ngữ lập trình JS được phát minh năm 1995 bởi Brendan Eich và trở thành chuẩn ECMA (ECMA standard) năm 1997 bởi tổ chức ECMA - European Computer Manufacturers Association
-- `ECMAScript` trở thành tên chính thức của ngôn ngữ, nó là một chuẩn quy định các syntax, semantic và các tính năng của ngôn ngữ. Được duy trì bởi tổ chức tiêu chuẩn ECMA quốc tế - ECMA International Standard Organization. JS chỉ là một triển khai ngôn ngữ của ECMAScript
+
+- `ECMAScript` là một chuẩn quy định các syntax, semantic và các tính năng của ngôn ngữ. Được duy trì bởi tổ chức tiêu chuẩn ECMA quốc tế - ECMA International Standard Organization. JS chỉ là một triển khai ngôn ngữ của ECMAScript
 - Các ngôn ngữ khác tuân theo chuẩn ECMAScript như ActionScript, JScript, TypeScript
 
 ![](../images/js-version.png)
