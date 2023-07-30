@@ -290,9 +290,9 @@ const developer = {
     person.showMySelf(); // {name: 'Ple', weight: 49, eat: f...}
     ```
 
-  - Execution context: Mỗi method khi được gọi sẽ tạo ra một execution context của riêng nó. Khi đó `this` cũng sẽ trỏ đến các object khác nhau. Sẽ tìm hiểu trong phần [Function](./../08_function/index.md)
+  - Execution context: Mỗi method khi được gọi sẽ tạo ra một execution context của riêng nó. Khi đó `this` cũng sẽ trỏ đến các object khác nhau. Sẽ tìm hiểu trong phần [Function](./../08_function/index.md) và [Asynchronous](./../11_ES6/08_asynchronous.md)
 
-    ![](/2_Programs/Stage2/3_javascript/images/function-execution-context.png)
+    ![](../images/execution-context.png)
 
     ```js
     const student = {

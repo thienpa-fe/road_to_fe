@@ -1,14 +1,12 @@
 # JS Modules
 
-Trong source code của các dự án, mỗi khi có update feature mới hay cần optimize thì sẽ thêm một số lượng lớn các file code và số lượng dòng code.
+Trong source code của các dự án, mỗi khi có update feature mới hay cần optimize thì team dev sẽ thêm một số lượng lớn các file code và số lượng dòng code để hiện thực feature đó.
 
-Việc để tất cả code chung một file hay một thư mục sẽ dẫn đến việc khó debug khi phát sinh lỗi hay không thể expand một cách dễ dàng để thêm các tính năng mới trong tương lai.
+Việc để tất cả code chung một file hay một thư mục sẽ dẫn đến việc khó debug khi phát sinh lỗi hay không thể expand một cách dễ dàng để thêm các tính năng mới trong tương lai. Khả năng làm việc nhóm cũng sẽ giảm đi khi code của các developer trong cùng một team luôn conflict với nhau.
 
 Giải pháp hiệu quả sẽ là phân tách các chức năng của hệ thống ra thành các modules gồm các thư mục và các file code khác nhau để dễ dàng kiểm soát code và bảo trì sau này.
 
 ![](../images/import-export-banner.jpeg)
-
-## introduction
 
 ## Import - Export
 
@@ -16,7 +14,7 @@ Giải pháp hiệu quả sẽ là phân tách các chức năng của hệ th�
 
   ![](../images/import-export.png)
 
-- Import là nhập các resource hợp lệ từ bên ngoài vào file code hiện tại và sử dụng. Có thể import một phần toàn bộ những gì được export ra từ một file khác.
+- Import là nhập / nạp các resource hợp lệ từ bên ngoài vào file code hiện tại và sử dụng. Có thể import một phần toàn bộ những gì được export ra từ một file khác.
 
 - Export là xuất các resource cần thiết ra ngoài để những file khác trong project có thể import và sử dụng được. Export có 2 loại:
 
