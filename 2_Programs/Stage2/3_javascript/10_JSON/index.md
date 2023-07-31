@@ -78,12 +78,11 @@
   ```
 
 ## JSON với localStorage
-
-Ta không thể lưu cả một object nguyên bản vào localStorage của browser mà không xử lí chúng:
+Ta không thể lưu cả một object nguyên bản vào localStorage của browser mà không xử lí chúng. Vì cơ chế của localStorage trên trình duyệt chỉ cho phép lưu data dưới dạng string, không hỗ trợ lưu các cấu trúc dữ liệu phức tạp (array, object,...) nên cần phải convert chúng trước khi lưu.
 
 ![](../images/save-pure-ob-localstorage.gif)
 
-Ta phải stringify chúng thành string để lưu vào localStorage rồi sau đó khi cần sử dụng thì sẽ parse nó lại:
+Sử dụng JSON.stringify() để convert data thành string sau đó lưu vào localStorage rồi khi cần sử dụng thì sẽ parse nó lại bằng JSON.parse():
 
 ![](../images/save-stringify-ob-localstorage.gif)
 
@@ -144,3 +143,5 @@ console.log(getStudentFromLocalStorage()); // {name: 'Beecuto', age: 25}
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
 
 - https://javascript.info/json
+
+- https://www.w3schools.com/js/js_json.asp
