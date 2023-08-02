@@ -88,7 +88,7 @@ Sử dụng khi biết trước được số vòng lặp và điều kiện.
   ```js
   let i = 0;
 
-  for (i = 0; i < 3; i++) {
+  for (i; i < 3; i++) {
     // use an existing variable
     console.log(i); // 0, 1, 2
   }
@@ -103,6 +103,15 @@ Sử dụng khi biết trước được số vòng lặp và điều kiện.
     console.log(i); // 0, 1, 2
   }
   console.log(i); // ReferenceError: i is not defined
+  ```
+
+  Trường hợp biến i được khai báo trong for không kèm theo các keyword khai báo biến như `var`, `let`, `const` thì i sẽ mặc định được khai báo với global context và có thể truy cập nó ở ngoài for.
+
+  ```js
+  for (i = 0; i < 3; i++) {
+    console.log(i); // 0, 1, 2
+  }
+  console.log(i); // 3
   ```
 
 - For i lặp vô hạn
