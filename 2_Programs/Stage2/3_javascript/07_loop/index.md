@@ -373,4 +373,83 @@ for (let i of list) {
 
 1. Viết hàm dùng để đảo ngược một array [1 ,2, 3] mà không được dùng method reverse().
 
-2. Cho một mảng gồm 5 phần tử [10, 20, 30, 40, 50]. Hãy tạo ra một mảng gồm các phần tử của màng cũ nhưng có giá trị gấp đôi bằng cách sử dụng for i, for in. Vd [20, 40, 60, 80, 100];
+    <details>
+      <summary>Answer</summary>
+
+   Cách 1:
+
+   ```js
+   const arr = [1, 2, 3];
+   const reversedArr = [];
+
+   for (let i = arr.length - 1; i >= 0; i--) {
+     reversedArr.push(arr[i]);
+   }
+
+   console.log(reversedArr);
+   ```
+
+   Cách 2:
+
+   ```js
+   const arr = [1, 2, 3];
+
+   const reverseArr = (inputArr) => {
+     return inputArr.sort((a, b) => b - a);
+   };
+
+   console.log(reverseArr(arr));
+   ```
+
+   Cách 3:
+
+   ```js
+   const arr = [1, 2, 3];
+
+   const reverseArr = (arr) => {
+     const result = [];
+     while (arr.length > 0) {
+       result.push(arr.pop());
+     }
+
+     return result;
+   };
+
+   console.log(reverseArr(arr));
+   ```
+
+    </details>
+
+2. Cho một mảng gồm 5 phần tử [10, 20, 30, 40, 50]. Hãy tạo ra một mảng gồm các phần tử của mảng cũ nhưng có giá trị gấp đôi bằng cách sử dụng for i, for in. Vd [20, 40, 60, 80, 100];
+
+    <details>
+
+      <summary>Answer</summary>
+
+   Sử dụng for i:
+
+   ```js
+   const arr = [10, 20, 30, 40, 50];
+   const result = [];
+
+   for (let i = 0; i < arr.length; i++) {
+     result.push(arr[i] * 2);
+   }
+
+   console.log(result);
+   ```
+
+   Sử dụng for...in
+
+   ```js
+   const arr = [10, 20, 30, 40, 50];
+   const result = [];
+
+   for (let index in arr) {
+     result.push(arr[index] * 2);
+   }
+
+   console.log(result);
+   ```
+
+    </details>
