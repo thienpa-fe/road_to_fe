@@ -23,10 +23,8 @@ Template String sẽ có 2 phần:
 
 Khai báo string theo cách thông thường
 
-//TODO: Keep double quote when init string
-
 ```js
-const doubleQuotedString = 'This is a common string.';
+const doubleQuotedString = "This is a common string.";
 const singleQuotedString = 'Also a common string';
 ```
 
