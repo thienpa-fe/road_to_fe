@@ -108,7 +108,7 @@
 
 |          | Function declaration                                    | Function expression                                                                                                                                  |
 | -------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Syntax   | Sử dụng keyword `function` và đặt tên khai báo độc lập.  | Gán function vào biến, function không có tên.                                                                                                        |
+| Syntax   | Sử dụng keyword `function` và đặt tên khai báo độc lập. | Gán function vào biến, function không có tên.                                                                                                        |
 | Hoisting | Gọi hàm trước rồi khai báo sau                          | Function chỉ được tạo khi chương trình thực thi đến đoạn code khai báo và chỉ sử dụng trong một thơi điểm nhất định. Phải khai báo rồi mới dùng được |
 | Use case | Dùng khi muốn định nghĩa một hàm và gọi mọi lúc mọi nơi | Vì được gán vào biến nên function sử dụng khi muốn định nghĩa trong một scope nào đó giúp global scope sạch hơn                                      |
 | Name     | Được đặt tên theo naming convention                     | Function không có tên, chỉ được gọi nhờ vào biến mà function được gán                                                                                |
@@ -296,9 +296,9 @@
   ```
 
   ```js
-  let name = 'bee'
+  let name = 'bee';
 
-  ;(function (name) {
+  (function (name) {
     console.log(name);
   })(name);
   ```
@@ -377,7 +377,7 @@ doSomething(getTodoList);
         };
 
         student = { ...response };
-        callback(response);
+        callback(student);
       }, 3000);
     }
 
