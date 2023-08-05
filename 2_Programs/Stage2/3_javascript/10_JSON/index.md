@@ -46,6 +46,24 @@
 - Một số ví dụ khác:
 
   ```js
+  JSON.parse('{}'); // {}
+
+  JSON.parse('true'); // true
+
+  JSON.parse('"foo"'); // "foo"
+
+  JSON.parse('[1, 5, "false"]'); // [1, 5, "false"]
+
+  JSON.parse('null'); // null
+  ```
+
+### [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+
+- Convert json từ object -> string
+
+- Một số ví dụ khác:
+
+  ```js
   JSON.stringify({}); // '{}'
 
   JSON.stringify(true); // 'true'
@@ -59,25 +77,8 @@
   JSON.stringify({ x: 5 }); // '{"x":5}'
   ```
 
-### [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
-
-- Convert json từ object -> string
-
-- Một số ví dụ khác:
-
-  ```js
-  JSON.parse('{}'); // {}
-
-  JSON.parse('true'); // true
-
-  JSON.parse('"foo"'); // "foo"
-
-  JSON.parse('[1, 5, "false"]'); // [1, 5, "false"]
-
-  JSON.parse('null'); // null
-  ```
-
 ## JSON với localStorage
+
 Ta không thể lưu cả một object nguyên bản vào localStorage của browser mà không xử lí chúng. Vì cơ chế của localStorage trên trình duyệt chỉ cho phép lưu data dưới dạng string, không hỗ trợ lưu các cấu trúc dữ liệu phức tạp (array, object,...) nên cần phải convert chúng trước khi lưu.
 
 ![](../images/save-pure-ob-localstorage.gif)
