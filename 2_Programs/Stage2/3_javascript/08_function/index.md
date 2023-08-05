@@ -420,8 +420,110 @@ Ví dụ 3:
 ## Thực hành
 
 1. Viết một hàm dùng để xác nhận một số có phải là số chẵn hay không?
-2. Viết một hàm yêu cầu người dùng nhập tên và in ra "Hello + tên người dùng đó"
+
+   <details>
+     <summary>Answer</summary>
+    <br />
+    
+    Cách 1:
+
+   ```js
+   const checkEvenNumber = (input) => {
+     if (input % 2 === 0) {
+       console.log(`${input} is even number`);
+     } else {
+       console.log(`${input} is not even number`);
+     }
+   };
+
+   checkEvenNumber(10);
+   checkEvenNumber(11);
+   ```
+
+   Cách 2:
+
+   ```js
+   const checkEvenNumber = (input) => input % 2 === 0;
+   checkEvenNumber(10);
+   checkEvenNumber(11);
+   ```
+
+   </details>
+
+2. Viết một hàm yêu cầu người dùng nhập tên và in ra "Hello + tên người dùng đó" sử dụng prompt và alert. (test trên browser)
+   <details>
+     <summary>Answer</summary>
+
+   ```js
+   const userInput = prompt('Input your name:');
+
+   alert(`Hello ${userInput}`);
+   ```
+
+   </details>
+
 3. Viết một hàm dùng để lọc ra các phần tử chẵn của một mảng
+
+   <details>
+     <summary>Answer</summary>
+     <br />
+
+   Cách 1:
+
+   ```js
+   const arr = [13, 4, 80, 3, 25, 15, 20];
+   const result = [];
+
+   const filterEvenElement = (inputArr) => {
+     for (let i = 0; i < inputArr.length; i++) {
+       if (inputArr[i] % 2 === 0) {
+         result.push(inputArr[i]);
+       }
+     }
+     return result;
+   };
+
+   filterEvenElement(arr);
+   ```
+
+   Cách 2:
+
+   ```js
+   const arr = [13, 4, 80, 3, 25, 15, 20];
+
+   const filterEvenElement = (inputArr) =>
+     inputArr.filter((el) => el % 2 === 0);
+
+   console.log(filterEvenElement(arr));
+   ```
+
+   </details>
+
 4. Viết một hàm trả về giá trị nhỏ thứ 2 trong một mảng
+
+   <details>
+     <summary>Answer</summary>
+
+   ```js
+   const getSecondMinValue = (arr) =>
+     arr.sort((prev, next) => next - prev)[arr.length - 2];
+
+   getSecondMinValue([10, 40, 5, 15, 50, 2]);
+   ```
+
+   </details>
+
 5. Viết một hàm tạo ra mã số nhân viên có tiền tố "PLE-XXXXXX" trong đó XXXXXX được sinh ra ngẫu nhiên
-6. Tìm hiểu và thuyết trình + code demo khái niệm higher order function và first class function
+
+   <details>
+     <summary>Answer</summary>
+
+   ```js
+   const generateEmployeeID = () => `PLE-${Math.ceil(Math.random() * 1000000)}`;
+
+   console.log(generateEmployeeID());
+   ```
+
+   </details>
+
+6. Tìm hiểu và thuyết trình + code demo khái niệm higher order function và first class function.
