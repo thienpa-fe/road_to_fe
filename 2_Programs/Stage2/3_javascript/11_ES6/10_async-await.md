@@ -114,7 +114,7 @@ myFunc();
 console.log('After function!');
 ```
 
-![](../images/async-await-flow-1.gif)
+  ![](../images/async-await-flow-1.gif)
 
 ---
 
@@ -122,15 +122,15 @@ console.log('After function!');
 
 1. Chương trình khi chạy sẽ thực thi hàm console.log() và in ra "Before function!" vì đây là tác vụ đồng bộ (sync).
 
-![](../images/async-await-flow-2.gif)
+    ![](../images/async-await-flow-2.gif)
 
 2. Khi function myFunc() được call và thực thi. Nó sẽ tạo ra một execution context và thực thi `console.log('In function!')` in ra "In function!".
 
-![](../images/async-await-flow-3.gif)
+    ![](../images/async-await-flow-3.gif)
 
 3. Khi luồng thực thi gặp hàm `one()`. Đây là hàm return về Promise cho nên tất cả những đoạn code phía sau (ở đây là `console.log(res)`) sẽ được tính như code bất đồng bộ và được remove ra khỏi luồng thực thi chính. Gặp keyword `await` nên cả hàm sẽ phải chờ Promise ở một luồng thực thi khác.
 
-![](../images/async-await-flow-4.gif)
+    ![](../images/async-await-flow-4.gif)
 
 4. Luồng thực thi lúc này tiếp tục thực hiện dòng `console.log('After function!')` và in ra "After function!".
 
@@ -138,7 +138,7 @@ console.log('After function!');
 
    Event loop lúc này thấy call stack đã trống nên đẩy callback của promise lên call stack và thực thi dòng `console.log(res)` với res là giá trị resolve của Promise là "One!".
 
-![](../images/async-await-flow-5.gif)
+    ![](../images/async-await-flow-5.gif)
 
 ## So sánh callback - promise - async await
 
