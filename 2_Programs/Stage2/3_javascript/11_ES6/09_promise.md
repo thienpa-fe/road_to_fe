@@ -163,7 +163,7 @@ getUsername.then((data) => {
 });
 ```
 
-Để khắc phực tình trạng Promise hell. Sau này ES6 cung cấp thêm khái niệm `async await` để làm việc với bất đồng bộ JS tốt hơn nữa (dễ bảo trì và sửa lỗi).
+Để khắc phục tình trạng Promise hell. Sau này ES6 cung cấp thêm khái niệm `async await` để làm việc với bất đồng bộ JS tốt hơn nữa (dễ bảo trì và sửa lỗi).
 
 ```js
 const handleUsername = async () => {
@@ -297,7 +297,7 @@ handleUsername();
      })
      .then(() => {
        setTimeout(() => {
-         console.log('Handle something in 3s');
+         console.log('Do something in 3s');
        }, 3000);
      })
      .then(() => {
@@ -316,12 +316,21 @@ handleUsername();
    Start
    Do other thing
    Finish
-   Handle something in 3s
+   Do something in 3s
    ```
 
    </details>
 
 2. Viết lại đoạn code trên để các tác vụ được thực thi đúng theo thứ tự được định nghĩa trong code.
+
+   Output expected:
+
+   ```
+   Start
+   Do something in 3s
+   Do other thing
+   Finish
+   ```
 
    <details>
      <summary>Answer</summary>
