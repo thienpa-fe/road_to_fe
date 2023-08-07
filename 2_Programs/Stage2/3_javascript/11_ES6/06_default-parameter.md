@@ -51,7 +51,7 @@
   Một ví dụ khác: Viết hàm nhận vào một từ và in hoa từ đó
 
   ```js
-  const uppercaseWord = (word) => word.toUpperCase();
+  const uppercaseWord = (word) => String(word).toUpperCase();
 
   console.log(uppercaseWord('hello')); // 'HELLO'
 
@@ -61,7 +61,7 @@
   Sử dụng default parameter:
 
   ```js
-  const uppercaseWord = (word = '') => word.toUpperCase();
+  const uppercaseWord = (word = '') => String(word).toUpperCase();
 
   console.log(uppercaseWord('hello')); // 'HELLO'
 

@@ -33,7 +33,7 @@
   Trường hợp chỉ có một tham số thì có để bỏ `()` ở tham số:
 
   ```js
-  const sayHello = (name) => {
+  const sayHello = name => {
     console.log(`Hello ${name}!`);
   };
   ```
