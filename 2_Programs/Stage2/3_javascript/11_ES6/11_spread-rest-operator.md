@@ -132,15 +132,13 @@ Function: Rest Parameter
 
 - Giống nhau về syntax: `...`
 
-- Rest thường dùng chung với destucturing để gom nhóm các phần tử của mảng hay các property của object lại thành một mảng / object duy nhất.
+- Rest thường dùng chung với destucturing để gom nhóm các phần tử của mảng hay các property của object lại thành một mảng / object duy nhất. Dùng để gom tham số truyền vào hàm.
 
 - Spread dùng để extract / giải phóng / trải rộng:
 
   - Các phần tử của mảng.
 
   - Các property của object.
-
-  - Tham số truyền vào hàm.
 
   Trả về mảng mới hoặc object mới chứa các phần tử / property được giải phóng đó.
 
