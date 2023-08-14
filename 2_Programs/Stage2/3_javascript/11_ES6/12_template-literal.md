@@ -24,7 +24,7 @@ Template String sẽ có 2 phần:
 Khai báo string theo cách thông thường
 
 ```js
-const doubleQuotedString = "This is a common string.";
+const doubleQuotedString = 'This is a common string.';
 const singleQuotedString = 'Also a common string';
 ```
 
@@ -159,7 +159,17 @@ Hàm được call bằng template string sẽ được define 3 tham số:
      <summary>Answer</summary>
 
    ```js
+   const student = {
+     firstName: 'John',
+     lastName: 'Doe',
+     age: 30,
+   };
+
+   const { firstName, lastName, age } = student;
+
    const message = `My name is ${firstName} ${lastName} and I am ${age} years old.`;
+
+   console.log(message);
    ```
 
    </details>
