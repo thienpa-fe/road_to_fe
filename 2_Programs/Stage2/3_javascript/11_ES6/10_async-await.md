@@ -87,7 +87,7 @@ console.log('After function!');
 ```
 'Before function!'
 
-Promise { undefined }
+'In function!'
 
 'After function!'
 ```
