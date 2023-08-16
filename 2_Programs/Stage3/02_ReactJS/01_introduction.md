@@ -61,3 +61,31 @@ Trang tài liệu chính thức: https://react.dev.
   # pnpm
   pnpm create vite my-react-app --template react
   ```
+
+## Thinking in React
+
+React sử dụng concept component. Tất cả mọi thứ trong hệ thống đều là component. Vì thế ta cần chia một cấu trúc / layout phức tạp thành các component nhỏ.
+
+![](../_images/separate-component.jpeg)
+
+Việc chia tách các component sẽ tăng tối đa khả năng tái sử dụng và mở rộng hệ thống. Bên cạnh đó dễ dàng quản lý cách hoạt động của component và dễ debug khi có lỗi xảy ra.
+
+![](../_images/react-split-components.png)
+
+## React Developer Tool
+
+Exension hỗ trợ làm việc với React: [Link install](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+## Lợi ích
+
+![](../_images/react-trending.png)
+
+- Một trong những thư viện được sử dụng phổ biến nhất. [(trending)](https://trends.google.com/trends/explore?geo=VN&q=reactJS,vueJS,svelte&hl=en)
+
+- Cộng đồng hỗ trợ lớn.
+
+- Tốc độ phát triển sản phẩm nhanh.
+
+- Tối ưu hiệu suất (Virtual DOM).
+
+- Khả năng tái sử dụng và mở rộng.
