@@ -53,8 +53,9 @@ API thiết kế tự do không theo convention:
 ```
 POST /create_post
 GET /list_posts
-POST /feature_posts
-POST /edit_post/:post_id
+GET /post/:post_id
+PUT /edit_post/:post_id
+DELETE /delete_posts
 ```
 
 API thiết kế theo convention:
@@ -64,7 +65,7 @@ POST /v1/posts
 GET /v1/posts
 GET /v1/posts/:post_id
 PUT /v1/posts/:post_id
-DELETE /posts/:post_id
+DELETE /v1/posts/:post_id
 ```
 
 ## Postman
@@ -75,7 +76,9 @@ Là một API tool giúp hỗ trợ làm việc với API bằng cách cho phép
 
 Installation: https://www.postman.com
 
-  ![](../../../Stage3/_images/demo-postman.png)
+![](../../../Stage3/_images/demo-postman.png)
+
+Example API: http://localhost:3000/users
 
 ### Tham khảo
 
