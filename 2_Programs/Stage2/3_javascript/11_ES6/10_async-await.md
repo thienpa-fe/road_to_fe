@@ -87,7 +87,7 @@ console.log('After function!');
 ```
 'Before function!'
 
-Promise { undefined }
+'In function!'
 
 'After function!'
 ```
@@ -128,11 +128,11 @@ console.log('After function!');
 
     ![](../images/async-await-flow-3.gif)
 
-3. Khi luồng thực thi gặp hàm `one()`. Đây là hàm return về Promise cho nên tất cả những đoạn code phía sau (ở đây là `console.log(res)`) sẽ được tính như code bất đồng bộ và được remove ra khỏi luồng thực thi chính. Gặp keyword `await` nên cả hàm sẽ phải chờ Promise ở một luồng thực thi khác.
+3. Khi luồng thực thi đến keyword `await` và hàm `one()`. Hàm `one()` return về Promise nên đây là tác vụ bất đồng bộ. Keyword `await` trong đoạn code này có tác dụng chờ Promise nên cả execution context của hàm myFunc chuyển sang WebAPIs, vì Promise đã được resolve ngay lập tức nên execution context hàm được chuyển đến callback queue để thực thi `.then()` và gán giá trị vào cho biến res.
 
     ![](../images/async-await-flow-4.gif)
 
-4. Luồng thực thi lúc này tiếp tục thực hiện dòng `console.log('After function!')` và in ra "After function!".
+4. Sau khi remove myFunc() ra khỏi call stack thì uồng thực thi lúc này tiếp tục thực hiện dòng `console.log('After function!')` và in ra "After function!".
 
    Vì Promise.resolve() là trạng thái settled. Nên promise được chuyển thẳng về callback queue (microtask queue).
 
