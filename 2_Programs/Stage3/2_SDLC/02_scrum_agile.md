@@ -80,6 +80,8 @@ Các giai đoạn chuyển từ mức cao hơn xuống mức thấp hơn. Giốn
 
 ### Agile
 
+![](../_images/agile-banner.webp)
+
 Là một bộ triết lí bao gồm các nguyên tắc phát triển phần mềm có thể linh hoạt biến đổi dựa theo nhiều yếu tố khác nhau. Agile ra đời khi có đến 70% các dự án phần mềm bị thất bại và sự bất cập của mô hình waterfall cùng các mô hình phát triển khác.
 
 Tuyên ngôn Agile: https://agilemanifesto.org/
@@ -123,6 +125,8 @@ Thích nghi cải tiến liên tục sau mỗi vòng lặp quy trình phát tri�
 > 3 yếu tố này nếu đứng riêng lẻ sẽ không có tác dụng gì nhiều trong dự án, vì thế scrum áp dụng cả 3 cái này thành 1 quy trình thống nhất, thế nó mới là trụ cột ⇒ Scrum không chỉ dùng đc trong ngành phần mềm mà còn các ngành khác nữa.
 
 ### Scrum
+
+![](../_images/scrum-process.png)
 
 Scrum là một trong những mô hình phát triển phần mềm hiệu quả và được sử dụng phổ biến nhất hiện nay.
 
