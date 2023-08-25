@@ -6,11 +6,11 @@
 
 Trong mô hình client server đơn giản, client sẽ gửi một request đến server để lấy dữ liệu về. Vậy thì cái gọi là request đó thật sự là gì và nó có cấu tạo như thế nào?
 
-### HTTP (Hyper Text Transer Protocol)
+### HTTP (Hyper Text Transfer Protocol)
 
 - Là một giao thức (protocol) chung dùng để truyền tải dữ liệu siêu văn bản. Nó được tạo ra với những quy tắc (rules), những thống nhất chung để các hệ thống có thể hiểu và giao tiếp truyền nhận dữ liệu với nhau.
 
-- Client sẽ gửi một **response** sử dụng HTTP lên server. Server sau đó xử lí và trả về lại một **resquest** cũng bằng cách sử dụng HTTP.
+- Client sẽ gửi một **resquest** sử dụng HTTP lên server. Server sau đó xử lí và trả về lại một  **response** cũng bằng cách sử dụng HTTP.
 
 ### HTTP Request
 
@@ -111,10 +111,6 @@ Trong mô hình client server đơn giản, client sẽ gửi một request đ�
   - Fetching and hiển thị data từ các nguồn API bên ngoài
 
 - Sau này có các frameworks ra đời như React, Vue, Angular hỗ trợ thêm các cách tối ưu hơn để thực hiện việc truyền nhận hiển thị dữ liệu.
-
-#### fetch
-
-#### Axios
 
 ### HTTP vs HTTPS
 
