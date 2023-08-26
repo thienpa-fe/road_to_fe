@@ -184,6 +184,21 @@ Dùng để kết hợp các data từ một hoặc nhiều bảng để hỗ tr
 
 ![](../_images/sql-join-relationship.png)
 
+```sql
+SELECT *
+FROM table_name1
+JOIN table_name2
+ON table_name1.column1 = table_name2.column2
+WHERE condition
+```
+
+```sql
+SELECT first_name, last_name
+FROM Customers
+JOIN Orders
+ON Customers.customer_id = Orders.customer_id
+```
+
 ## Tools
 
 - SQL Editor Online: https://www.programiz.com/sql/online-compiler
