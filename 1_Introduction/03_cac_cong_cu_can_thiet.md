@@ -19,19 +19,19 @@
 
 - Ứng dụng giúp quản lý công việc cá nhân hàng ngày, giúp nắm bắt được khối lượng công việc thực hiện
 
-  ![](/_Introduction/images/trello.jpg)
+  ![](images/trello.jpg)
 
 ## VSCode (https://code.visualstudio.com)
 
 - Công cụ dùng để soạn thảo code. Giống như các trình soạn thảo văn bản khác như MS Word, VScode sẽ hỗ trợ thêm tính năng giúp mình viết code được thuận tiện hơn như gợi ý code
 
-  ![](/_Introduction/images/vscode.png)
+  ![](images/vscode.png)
 
 ## Notion (https://www.notion.so/desktop)
 
 - Ứng dụng dùng để note, ghi chú lại những nội dung cần thiết như vở truyền thống, lần này sẽ là dùng app
 
-![](/_Introduction/images/notion-demo.webp)
+![](images/notion-demo.webp)
 
 ## Github (https://github.com)
 
@@ -43,10 +43,11 @@
 - Một tool chạy trong máy dùng để tương tác với các bên cung cấp dịch vụ lưu trữ code như github, gitlab,...
 - Dùng để gửi code từ dưới máy của mình lên lưu trữ trên github, gitlab
 
-![](/_Introduction/images/git.png)
+  ![](images/git.png)
 
 ## NodeJS [(Download)](https://nodejs.org/en)
 
 - Môi trường dùng để chạy và thực thi các chương trình code (Sẽ tìm hiểu sau)
 - Khi download chọn bản `Recommend for Most Users`
-  ![](/_Introduction/images/nodejs.png)
+
+  ![](images/nodejs.png)
