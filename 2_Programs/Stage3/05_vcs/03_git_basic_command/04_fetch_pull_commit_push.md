@@ -4,7 +4,7 @@
 
 ![](../../_images/git-fetch.png)
 
-- Cập nhật các thay đổi cũng như fetch các nhánh mới, các commit mới từ remote repository về local repository.
+Cập nhật các thay đổi cũng như fetch các nhánh mới, các commit mới từ remote repository về local repository.
 
   ```bash
   git fetch
@@ -24,6 +24,12 @@
 
   ```bash
   git commit -m "commit message"
+  ```
+
+- Trường hợp đã commit nhưng có một vài thay đổi cần update:
+
+  ```bash
+  git commit --amend
   ```
 
 ## Push

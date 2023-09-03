@@ -13,6 +13,8 @@ Mỗi local repository đều chứa các config cũng như thông tin của aut
 - Config thông tin author để làm việc cùng với các member khác trong dự án:
 
   ```bash
+  cd my_project # change directory to current project
+
   git config user.name="Thien Pham"
 
   git config user.email="phamanhthien1907@gmail.com"
