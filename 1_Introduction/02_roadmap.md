@@ -1,35 +1,50 @@
 # Roadmap Frontend (Fresher)
 
-- Lộ trình dành cho người chưa có / chưa hoàn chỉnh về kiến thức nền tảng
+- Lộ trình dành cho người chưa có / chưa hoàn chỉnh về kiến thức nền tảng.
 
-# Giai đoạn 1 (Xây dựng nền móng)
+## Giai đoạn 1 (Xây dựng nền móng)
 
-- Tìm hiểu tổng quan, các mảng và lĩnh vực làm việc, con đường phát triển trong ngành IT,
-- Các khái niệm cơ bản về công nghệ, mạng, trình duyệt
-- Tìm hiểu mô hình client - server cơ bản, cách kết nối và hoạt động với nhau thông qua internet
-- Sử dụng cơ bản terminal - CLI
-- Sử dụng code editor, cài đặt các biến môi trường
+- Tìm hiểu tổng quan, các mảng và lĩnh vực làm việc, con đường phát triển trong ngành IT.
 
-# Giai đoạn 2 (Xây dựng khung sườn)
+- Các khái niệm cơ bản về công nghệ.
 
-- HTML - Bài tập áp dụng
-- CSS - Bài tập áp dụng
-- Ngôn ngữ lập trình JavaScript - Bài tập áp dụng + thuật toán giải quyết vấn đề
-- Tìm hiểu về git - Nền tảng dùng để lưu trữ code
-- Library và framework (Hỗ trợ code nhanh hơn, tốt hơn, nhẹ hơn) - React
-- Clean code
-- Quy trình phát triển phần mềm - Scrum
+- Tìm hiểu mô hình client - server cơ bản, cách kết nối và hoạt động với nhau thông qua internet.
 
-# Giai đoạn 3 (Hoàn thiện và nâng cao kiến thức)
+- Sử dụng cơ bản terminal - CLI.
 
-- Kĩ năng làm việc thực tế (search google, đặt câu hỏi, nhờ trợ giúp từ đồng nghiệp)
-- Lên ý tưởng thiết kế sơ bộ sản phẩm ⇒ Startup
-- Thiết kế chức năng
-- Triển khai code và review
-- Deploy - Triển khai website lên internet
-- Training tạo CV - Apply phỏng vấn
+- Sử dụng code editor, cài đặt các biến môi trường.
 
-# Khoá học này khác với khoá học ở trung tâm như thế nào ?
+## Giai đoạn 2 (Xây dựng khung sườn)
+
+- HTML - Bài tập áp dụng.
+
+- CSS - Bài tập áp dụng.
+
+- Ngôn ngữ lập trình JavaScript - Bài tập áp dụng + thuật toán giải quyết vấn đề.
+
+- Tìm hiểu về git - Nền tảng dùng để lưu trữ code.
+
+- Library và framework (Hỗ trợ code nhanh hơn, tốt hơn, nhẹ hơn) - React.
+
+- Clean code.
+
+- Quy trình phát triển phần mềm - Scrum.
+
+## Giai đoạn 3+ (Hoàn thiện và nâng cao kiến thức)
+
+- Kĩ năng làm việc thực tế (search google, đặt câu hỏi, nhờ trợ giúp từ đồng nghiệp).
+
+- Lên ý tưởng thiết kế sơ bộ sản phẩm ⇒ Startup.
+
+- Thiết kế chức năng.
+
+- Triển khai code và review.
+
+- Deploy - Triển khai website lên internet.
+
+- Training tạo CV - Apply phỏng vấn.
+
+## Khoá học này khác với khoá học ở trung tâm như thế nào ?
 
 |              | Khoá 3 tháng                                                                                                  | Khoá trung tâm                                                                                                                                                                                           |
 | ------------ | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
