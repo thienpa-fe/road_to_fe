@@ -156,7 +156,7 @@ console.log('After function!');
 
 ## Thực hành
 
-Convert đoạn code sau từ async await thành promise:
+Convert đoạn code sau từ promise thành async await:
 
 1. Đoạn code 1:
 
