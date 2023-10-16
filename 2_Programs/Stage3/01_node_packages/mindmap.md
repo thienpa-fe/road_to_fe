@@ -4,7 +4,7 @@
 
 - Trang chủ: https://www.npmjs.com.
 - Là kho lưu trữ các packages, libraries.
-- Phục vụ cho việc phát triển phần mềm chạy trên NodeJS.
+- Phục vụ cho việc phát triển phần mềm chạy trên NodeJS (server hoặc trên trình duyệt (client)).
 - Có khoảng 800k packages trên kho lưu trữ npm và hoàn toàn miễn phí (open-source).
 - Hiện nay có rất nhiều dự án phần mềm sử dụng package của npm để phát triển thương mại.
 - Một vài kho quản lý lưu trữ khác phục vụ cho các nền tảng và các loại ngôn ngữ lập trình khác nhau.

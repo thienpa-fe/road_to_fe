@@ -4,7 +4,7 @@
 
 - CSS cho phép ta đặt các giá trị thành một biến (variable) để có thể sử dụng lại
 
-- Để đặt biết trong CSS ta dùng một "nơi" để khai báo và chứa các biến, đó là pseudo class `::root`, các cặp key-value trong pseudo class này sẽ tương ứng với các variable mà ta định nghĩa
+- Để đặt biến trong CSS ta dùng một "nơi" để khai báo và chứa các biến, đó là pseudo class `:root`, các cặp key-value trong pseudo class này sẽ tương ứng với các variable mà ta định nghĩa
 
 - Khi sử dụng ta sẽ dùng keyword `var()` và truyền param là variable ta đã định nghĩa ở pseudo root
 
